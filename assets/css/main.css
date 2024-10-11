@@ -139,6 +139,7 @@ input, textarea, select, button {
   background: #fff;
   padding: 16px;
   color: #696F79;
+  cursor: pointer;
 }
 .select-head span {
   display: inline-block;
@@ -416,6 +417,8 @@ input, textarea, select, button {
 }
 .main .prof-parallax .parallax-info {
   max-width: 670px;
+  position: relative;
+  z-index: 3;
 }
 .main .prof-parallax .form {
   margin-top: 28px;

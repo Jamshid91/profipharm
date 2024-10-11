@@ -112,6 +112,7 @@ body {
       background: $white;
       padding: 16px;
       color: #696F79;
+      cursor: pointer;
       span {
         display: inline-block;
         margin-right: 16px;
@@ -413,6 +414,8 @@ body {
       margin: 32px 0;
       .parallax-info {
         max-width: 670px;
+        position: relative;
+        z-index: 3;
       }
       .form {
         margin-top: 28px;
