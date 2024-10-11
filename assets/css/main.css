@@ -118,7 +118,6 @@ input, textarea, select, button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 24px;
 }
 .btn-base:hover {
   background: #EC3B43;
@@ -126,6 +125,47 @@ input, textarea, select, button {
 }
 .btn-base:active {
   background: #DD171D;
+}
+
+.select {
+  width: 100%;
+  position: relative;
+}
+.select-head {
+  width: 100%;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid #EBEEF2;
+  background: #fff;
+  padding: 16px;
+  color: #696F79;
+}
+.select-head span {
+  display: inline-block;
+  margin-right: 16px;
+}
+.select-head .select-active {
+  color: #131313;
+}
+.select .options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #EBEEF2;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 5;
+  display: none;
+}
+.select .options .option {
+  padding: 20px 22px;
+  text-align-last: left;
+  cursor: pointer;
+}
+.select .options .option:hover {
+  background: #F6F8FC;
 }
 
 .header {
@@ -370,6 +410,46 @@ input, textarea, select, button {
 }
 .main .sec3 .archive-item .item-info .info-list:last-child {
   margin-right: 0;
+}
+.main .prof-parallax {
+  margin: 32px 0;
+}
+.main .prof-parallax .parallax-info {
+  max-width: 670px;
+}
+.main .prof-parallax .form {
+  margin-top: 28px;
+}
+.main .prof-parallax .form .select {
+  width: 60%;
+}
+.main .prof-parallax .form .form-btn {
+  width: 38%;
+}
+.main .prof-parallax .parallax-bg {
+  width: 100%;
+  background: #fff url(../img/png/pr-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 430px;
+  position: relative;
+  padding: 32px;
+  border-radius: 16px;
+}
+.main .prof-parallax .parallax-bg .object {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
+  left: 0;
+}
+.main .prof-parallax .parallax-bg .object:nth-child(1) {
+  left: 0%;
+}
+.main .prof-parallax .parallax-bg .object:nth-child(2) {
+  left: 0%;
 }
 
 .popUp {
