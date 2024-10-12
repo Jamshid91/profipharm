@@ -1019,7 +1019,7 @@ input, textarea, select, button {
     margin-top: 24px;
   }
   .main .block2 .block2-box .box-left .left-info .subtitle-text span:last-child::before {
-    top: 0px !important;
+    top: -5px !important;
   }
   .main .block2 .block2-box .box-right .left-img img {
     width: 149px;
@@ -1048,7 +1048,7 @@ input, textarea, select, button {
     padding: 24px;
   }
   .main .block3 .block3-box .box-right .subtitle-text span:last-child::before {
-    top: 0px !important;
+    top: -5px !important;
   }
   .main .block3 .archive-box {
     grid-gap: 17px;
@@ -1288,7 +1288,7 @@ input, textarea, select, button {
     padding: 24px;
   }
   .main .block3 .block3-box .box-right .subtitle-text span:last-child::before {
-    top: 0px !important;
+    top: -5px !important;
   }
   .main .block3 .archive-box {
     grid-gap: 17px;
