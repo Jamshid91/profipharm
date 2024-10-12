@@ -59,7 +59,7 @@
             .subtitle-text {
               span:last-child {
                 &::before {
-                  top: 0px;
+                  top: 0px !important;
                 }
               }
             }
@@ -100,7 +100,7 @@
           .subtitle-text {
             span:last-child {
               &::before {
-                top: 0px;
+                top: 0px !important;
               }
             }
           }
@@ -420,7 +420,7 @@
           .subtitle-text {
             span:last-child {
               &::before {
-                top: 0px;
+                top: 0px !important;
               }
             }
           }
