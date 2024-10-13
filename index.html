@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-box">
             <div class="container">
                 <div class="d-flex justify-between align-center">
@@ -57,12 +57,10 @@
         </div>
         <div class="menu d-none">
             <div class="menu-content">
-                <div class="d-flex justify-end">
-                    <div class="menu-close pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
-                            <path d="M4.94497 4.94449C5.25181 4.63765 5.7493 4.63765 6.05614 4.94449L11.0006 9.88828L15.945 4.94449C16.2282 4.66125 16.6739 4.63946 16.9821 4.87912L17.0561 4.94449C17.363 5.25133 17.363 5.74881 17.0561 6.05565L12.1123 11.0001L17.0561 15.9445C17.3394 16.2277 17.3612 16.6734 17.1215 16.9816L17.0561 17.0557C16.7493 17.3625 16.2518 17.3625 15.945 17.0557L11.0006 12.1119L6.05614 17.0557C5.7729 17.3389 5.32722 17.3607 5.01899 17.121L4.94497 17.0557C4.63813 16.7488 4.63813 16.2513 4.94497 15.9445L9.88877 11.0001L4.94497 6.05565C4.66174 5.77242 4.63995 5.32673 4.87961 5.01851L4.94497 4.94449Z" fill="#B0B0B0"/>
-                          </svg>
-                    </div>
+                <div class="menu-close pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M4.94497 4.94449C5.25181 4.63765 5.7493 4.63765 6.05614 4.94449L11.0006 9.88828L15.945 4.94449C16.2282 4.66125 16.6739 4.63946 16.9821 4.87912L17.0561 4.94449C17.363 5.25133 17.363 5.74881 17.0561 6.05565L12.1123 11.0001L17.0561 15.9445C17.3394 16.2277 17.3612 16.6734 17.1215 16.9816L17.0561 17.0557C16.7493 17.3625 16.2518 17.3625 15.945 17.0557L11.0006 12.1119L6.05614 17.0557C5.7729 17.3389 5.32722 17.3607 5.01899 17.121L4.94497 17.0557C4.63813 16.7488 4.63813 16.2513 4.94497 15.9445L9.88877 11.0001L4.94497 6.05565C4.66174 5.77242 4.63995 5.32673 4.87961 5.01851L4.94497 4.94449Z" fill="#B0B0B0"/>
+                      </svg>
                 </div>
                 <div class="menu-box d-none">
                      <p class="menu-title">Меню</p>
@@ -536,6 +534,89 @@
             </div>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top d-flex  justify-between align-center">
+                <p class="top-text">Подпишитесь на нашу рассылку
+                    <span>чтоб быть в курсе новостей и обновлений</span></p>
+                <form class="top-form d-flex">
+                    <div class="input-box">
+                        <input type="email" id="email" class="form__inp" placeholder="yourmail@gmail.com" required>
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <button class="form-btn btn-base">
+                        <span>Подписаться</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 11.0422C11.9666 11.24 11.8892 11.4279 11.7627 11.5815C11.6362 11.7352 11.4664 11.8475 11.2751 11.9041C11.0838 11.9607 10.88 11.959 10.6897 11.8991C10.4995 11.8392 10.3315 11.7239 10.2077 11.5681C9.1195 10.7062 7.42235 9.46551 7.42235 9.46551C7.42235 9.46551 6.19427 11.6198 5.97463 11.8405C5.90213 11.9013 5.81776 11.9464 5.72674 11.9728C5.63573 11.9993 5.54006 12.0065 5.44607 11.9941C5.35209 11.9816 5.26178 11.9498 5.18088 11.9005C5.09997 11.8513 5.03027 11.7858 4.97625 11.7082C4.96505 11.6743 4.95179 11.6411 4.9364 11.6088L5.62522 8.1771L10.5373 3.37253L3.83809 7.17901C3.83809 7.17901 0.813035 6.27835 0.363766 6.10239C0.24787 6.03936 0.152297 5.94489 0.0880913 5.82998C0.023886 5.71508 -0.00623899 5.58442 0.00107471 5.45312C0.00838841 5.32183 0.0528319 5.19529 0.129406 5.08815C0.20598 4.98102 0.311534 4.89767 0.43372 4.84778C1.07268 4.5237 12.3443 0.237044 12.7237 0.126696C13.103 0.0163487 14.1014 -0.270955 13.9916 0.696328C13.8818 1.66361 12.0947 10.5113 11.9849 11.0422Z" fill="white"/>
+                          </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-middle d-flex justify-between">
+                <div class="left">
+                    <picture class="proff-img"> 
+                        <source srcset="assets/img/webp/title-text.webp" type="image/webp">  
+                        <source srcset="assets/img/png/title-text.png" type="image/png"> 
+                        <img src="assets/img/png/title-text.png" alt="">
+                    </picture>
+                    <p class="left-text">«Профессионалы» @2000−2024. Все права защищены.</p>
+                </div>
+                <div class="right d-flex justify-between">
+                    <div class="item">
+                        <p class="item-title">Меню:</p>
+                        <ul class="item-nav">
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="#">Архив</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">О компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">По вопросам сотрудничества:</p>
+                        <ul class="item-nav">
+                            <li><a href="tel:79039689251">+7 903 968-92-51</a></li>
+                            <li><a href="mailto:info@profipharm.ru">info@profipharm.ru</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Социальные сети:</p>
+                        <ul class="item-nav">
+                            <li><a href="#" class="d-flex align-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589Z" fill="#FE1E25"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2111 10.8944C13.9482 10.5259 13.9482 9.47409 13.2111 9.10557L8.44721 6.72361C7.78231 6.39116 7 6.87465 7 7.61803V12.382C7 13.1253 7.78231 13.6088 8.44721 13.2764L13.2111 10.8944Z" fill="white"/>
+                                  </svg>
+                                YouTube
+                            </a></li>
+                            <li><a href="#" class="d-flex align-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589Z" fill="#0077FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.375 6.0835C3.48333 11.2835 6.08329 14.4085 10.6416 14.4085H10.9V11.4335C12.575 11.6001 13.8416 12.8251 14.3499 14.4085H16.7167C16.0667 12.0418 14.3583 10.7335 13.2916 10.2335C14.3583 9.61684 15.8582 8.11684 16.2166 6.0835H14.0665C13.5999 7.7335 12.2167 9.2335 10.9 9.37517V6.0835H8.74996V11.8501C7.41663 11.5168 5.73333 9.90017 5.65833 6.0835H3.375Z" fill="white"/>
+                                </svg>
+                                ВКонтакте
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex justify-between align-center">
+                <ul class="left d-flex justify-between">
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика обработки персональных данных</a></li>
+                </ul>
+                <a href="#header" class="up-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                        <rect x="0.5" y="0.5" width="53" height="53" rx="9.5" fill="white"/>
+                        <rect x="0.5" y="0.5" width="53" height="53" rx="9.5" stroke="#EBEFF8"/>
+                        <path d="M26.25 33C26.25 33.4142 26.5858 33.75 27 33.75C27.4142 33.75 27.75 33.4142 27.75 33H26.25ZM27.5303 20.4697C27.2374 20.1768 26.7626 20.1768 26.4697 20.4697L21.6967 25.2426C21.4038 25.5355 21.4038 26.0104 21.6967 26.3033C21.9896 26.5962 22.4645 26.5962 22.7574 26.3033L27 22.0607L31.2426 26.3033C31.5355 26.5962 32.0104 26.5962 32.3033 26.3033C32.5962 26.0104 32.5962 25.5355 32.3033 25.2426L27.5303 20.4697ZM27.75 33V21H26.25V33H27.75Z" fill="#FE1E25"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="assets/js/plugin/swiper.js"></script>

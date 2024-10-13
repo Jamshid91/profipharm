@@ -188,6 +188,24 @@ body {
     }
   }
 
+  .input-box {
+    position: relative;
+    width: 100%;
+    .form__inp {
+      width: 100%;
+      height: 52px;
+      border-radius: 8px;
+      border: 1px solid #EBEEF2;
+      font-size: 17px;
+      &::placeholder {
+        color: $dark;
+      }
+      &:focus {
+        border-color: $base;
+      }
+    }
+  }
+
   .header {
     &-box {
       padding: 25px 0;
@@ -206,7 +224,12 @@ body {
       border-radius: 8px;
       border: 1.3px solid #EBEFF8;
       display: none;
+      position: relative;
       svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         &:last-child {
           display: none;
         }
@@ -293,11 +316,14 @@ body {
         width: 500px;
         height: 100%;
         background: $white;
-        padding: 16px 0 20px 20px;
+        padding: 32px 0 20px 20px;
         animation: anim-menu .3s linear;
+        position: relative;
       }
       .menu-close {
-        margin-right: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
         &:hover svg path {
           stroke: $base;
         }
@@ -307,14 +333,13 @@ body {
         line-height: 44px;
         font-weight: 500;
         padding-left: 16px;
-        margin-top: -10px;
       }
       .menu-nav {
         margin-top: 16px;
         padding-right: 10px;
         margin-right: 10px;
         overflow-y: scroll;
-        max-height: 55vh;
+        max-height: 65vh;
         &::-webkit-scrollbar {
           width: 6px;
           border-radius: 10px;
@@ -360,6 +385,7 @@ body {
 
   .main {
     background: #F6F8FC;
+    padding-bottom: 32px;
     .parallax {
       background: $white url(../img/webp/par-bg.webp);
       background-repeat: no-repeat;
@@ -727,6 +753,112 @@ body {
 
 
 
+  .footer {
+    &-top {
+      padding: 26px 0;
+      .top-text {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 500;
+        width: 310px;
+        margin-right: 60px;
+        span {
+          white-space: nowrap;
+        }
+      }
+      .top-form {
+        width: 55%;
+        justify-content: space-between;
+        .input-box {
+          width: 100%;
+          margin-right: 14px;
+        }
+        .form__inp {
+          padding: 0 24px 0 84px;
+        }
+        label {
+          position: absolute;
+          top: 15px;
+          left: 20px;
+          color: #696F79;
+        }
+        .form-btn {
+          width: 175px;
+          height: 52px;
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 30px;
+          span {
+            display: inline-block;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    &-middle {
+      padding: 52px 0;
+      border-top: 1px solid #EBEFF8;
+      border-bottom: 1px solid #EBEFF8;
+      .proff-img img {
+        width: 374px;
+        object-fit: contain;
+      }
+      .left-text {
+        font-size: 15px;
+        line-height: normal;
+        color: #696F79;
+        margin-top: 32px;
+      }
+      .left {
+        width: 40%;
+      }
+      .right {
+        width: 60%;
+        .item {
+          &-title {
+            font-size: 15px;
+            line-height: 23px;
+            color: #696F79;
+          }
+          &-nav {
+            margin-top: 32px;
+            li {
+              font-size: 20px;
+              line-height: 28px;
+              font-weight: 500;
+              margin-bottom: 16px;
+              &:last-child {
+                margin-bottom: 0;
+              }
+              &:hover {
+                color: $base;
+              }
+              svg {
+                margin-right: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-bottom {
+      padding: 26px 0;
+      .left {
+        li {
+          font-size: 15px;
+          line-height: normal;
+          color: #696F79;
+          margin-right: 100px;
+          &:hover {
+            color: $base;
+          }
+        }
+      }
+    }
+  }
 
 
 
