@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация пользователя</title>
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header-box">
+            <div class="container">
+                <div class="d-flex justify-between align-center">
+                    <div class="menu-btn pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14" fill="none">
+                            <path d="M10 12C10.5523 12 11 12.4477 11 13C11 13.5523 10.5523 14 10 14H1C0.447715 14 0 13.5523 0 13C0 12.4477 0.447715 12 1 12H10ZM17 6C17.5523 6 18 6.44772 18 7C18 7.55228 17.5523 8 17 8H1C0.447715 8 0 7.55228 0 7C0 6.44772 0.447715 6 1 6H17ZM17 0C17.5523 0 18 0.447715 18 1C18 1.55228 17.5523 2 17 2H1C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0H17Z" fill="#131313"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M5.39461 5.394C5.72934 5.05926 6.27205 5.05926 6.60679 5.394L12.0007 10.7872L17.3946 5.394C17.7036 5.08501 18.1898 5.06124 18.526 5.32269L18.6068 5.394C18.9415 5.72873 18.9415 6.27144 18.6068 6.60618L13.2136 12.0001L18.6068 17.394C18.9158 17.703 18.9395 18.1892 18.6781 18.5254L18.6068 18.6062C18.2721 18.9409 17.7293 18.9409 17.3946 18.6062L12.0007 13.2129L6.60679 18.6062C6.2978 18.9152 5.8116 18.9389 5.47536 18.6775L5.39461 18.6062C5.05987 18.2714 5.05987 17.7287 5.39461 17.394L10.7878 12.0001L5.39461 6.60618C5.08562 6.29719 5.06185 5.81099 5.3233 5.47474L5.39461 5.394Z" fill="#131313"/>
+                          </svg>
+                    </div>
+                    <ul class="header-nav d-flex">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li class="projects-btn d-flex align-center">
+                            <span>Проекты</span> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15ZM4 8.23922H6.67026V11H8.29957V8.23922H11V6.7306H8.29957V4H6.67026V6.7306H4V8.23922Z" fill="#E2020C"/>
+                            </svg>
+                        </li>
+                        <li><a href="./archive.html">Архив</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                    </ul>
+                    <a href="#" class="header-link d-none"><span>Новое:</span>  Шпаргалка профессионала</a>
+                    <div class="d-flex align-center">
+                        <a href="#" class="header-link btn-base">Шпаргалка профессионала</a>
+                        <div class="user-box d-flex align-center">
+                            <a href="./profile.html">
+                                <img src="assets/img/svg/login.svg" alt="" class="user-avatar">
+                            </a>
+                            <div class="user-box-info">
+                               <a href="./profile.html" class="d-flex align-center">
+                                    <span class="user-name">Андрей Петров</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                        <path d="M4.37105 6.92322C4.13144 6.71784 3.7707 6.74559 3.56531 6.9852C3.35993 7.22482 3.38768 7.58556 3.62729 7.79094L7.62729 11.2195C7.84129 11.4029 8.15706 11.4029 8.37105 11.2195L12.3711 7.79094C12.6107 7.58556 12.6384 7.22482 12.433 6.9852C12.2276 6.74559 11.8669 6.71784 11.6273 6.92322L7.99917 10.033L4.37105 6.92322Z" fill="#131313"/>
+                                    </svg>
+                               </a>
+                               <div class="user-logout">Выйти</div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu d-none">
+            <div class="menu-content">
+                <div class="menu-close pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M4.94497 4.94449C5.25181 4.63765 5.7493 4.63765 6.05614 4.94449L11.0006 9.88828L15.945 4.94449C16.2282 4.66125 16.6739 4.63946 16.9821 4.87912L17.0561 4.94449C17.363 5.25133 17.363 5.74881 17.0561 6.05565L12.1123 11.0001L17.0561 15.9445C17.3394 16.2277 17.3612 16.6734 17.1215 16.9816L17.0561 17.0557C16.7493 17.3625 16.2518 17.3625 15.945 17.0557L11.0006 12.1119L6.05614 17.0557C5.7729 17.3389 5.32722 17.3607 5.01899 17.121L4.94497 17.0557C4.63813 16.7488 4.63813 16.2513 4.94497 15.9445L9.88877 11.0001L4.94497 6.05565C4.66174 5.77242 4.63995 5.32673 4.87961 5.01851L4.94497 4.94449Z" fill="#B0B0B0"/>
+                      </svg>
+                </div>
+                <div class="menu-box d-none">
+                     <p class="menu-title">Меню</p>
+                     <ul class="menu-nav">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li class="projects-show_btn">Проекты</li>
+                        <li><a href="./archive.html">Архив</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="./contact.html">Контакты</a></li>
+                     </ul>
+                </div>
+               <div class="projects">
+                    <p class="menu-title">Проекты
+                        <span class="d-none"></span>
+                    </p>
+                    <ul class="menu-nav">
+                        <li><a href="#">Профессионалы ОТС</a></li>
+                        <li><a href="#">Профессионалы RX</a></li>
+                        <li><a href="#">Профессионалы на кухне</a></li>
+                        <li><a href="#">Мама-фармацевт</a></li>
+                        <li><a href="#">Битва сетей</a></li>
+                        <li><a href="#">Игра Профессионала</a></li>
+                        <li><a href="#">Алгоритмы</a></li>
+                        <li><a href="#">ФармТалант</a></li>
+                        <li><a href="#">ФармОлимпиада</a></li>
+                    </ul>
+               </div>
+               <a href="#" class="header-link btn-base">Шпаргалка профессионала</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="parallax">
+            <div class="parallax-bg d-flex align-center justify-center text-center">
+                <div class="parallax-text">
+                    <p class="suptitle-text">Мы обучаем провизоров и фармацевтов играя</p>
+                    <div class="title-text">
+                        <picture> 
+                            <source srcset="assets/img/webp/title-text.webp" type="image/webp">  
+                            <source srcset="assets/img/png/title-text.png" type="image/png"> 
+                            <img src="assets/img/png/title-text.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="">
+                    <picture class="object" data-value="3"> 
+                        <source srcset="assets/img/webp/par_1.webp" type="image/webp">  
+                        <source srcset="assets/img/png/par_1.png" type="image/png"> 
+                        <img src="assets/img/png/par_1.png" alt="">
+                    </picture>
+                    <picture class="object" data-value="5"> 
+                        <source srcset="assets/img/webp/par_2.webp" type="image/webp">  
+                        <source srcset="assets/img/png/par_2.png" type="image/png"> 
+                        <img src="assets/img/png/par_2.png" alt="">
+                    </picture>
+                    <picture class="object" data-value="9"> 
+                        <source srcset="assets/img/webp/par_3.webp" type="image/webp">  
+                        <source srcset="assets/img/png/par_3.png" type="image/png"> 
+                        <img src="assets/img/png/par_3.png" alt="">
+                    </picture>
+                    <picture class="object" data-value="-6"> 
+                        <source srcset="assets/img/webp/par_4.webp" type="image/webp">  
+                        <source srcset="assets/img/png/par_4.png" type="image/png"> 
+                        <img src="assets/img/png/par_4.png" alt="">
+                    </picture>
+                    <picture class="object" data-value="4"> 
+                        <source srcset="assets/img/webp/par_5.webp" type="image/webp">  
+                        <source srcset="assets/img/png/par_5.png" type="image/png"> 
+                        <img src="assets/img/png/par_5.png" alt="">
+                    </picture>
+                    <picture class="object" data-value="8"> 
+                        <source srcset="assets/img/webp/par_6.webp" type="image/webp">  
+                        <source srcset="assets/img/png/par_6.png" type="image/png"> 
+                        <img src="assets/img/png/par_6.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+     
+        <div class="form-page">
+            <div class="container">
+                <form class="form">
+                    <h1 class="title-text">Регистрация пользователя</h1>
+                    <div class="input-box">
+                        <input type="text" id="name" class="form__inp" placeholder="Андрей">
+                        <label for="name">Имя:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="last-name" class="form__inp" placeholder="Петров">
+                        <label for="last-name">Фамилия:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="first-name" class="form__inp" placeholder="Не указано">
+                        <label for="first-name">Отчество:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="city" class="form__inp" placeholder="Санкт-Петербург">
+                        <label for="city">Город:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="pharmacy" class="form__inp" placeholder="Народная Аптека">
+                        <label for="pharmacy">Аптечная сеть:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="user-email" class="form__inp" placeholder="yourmail@gmail.com">
+                        <label for="user-email">E-mail:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password" class="form__inp" placeholder="**************">
+                        <label for="password">Пароль:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                        <div class="view-pass">
+                            <img src="assets/img/svg/eye-on.svg" alt="">
+                            <img src="assets/img/svg/eye-off.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" id="password-repeat" class="form__inp" placeholder="**************">
+                        <label for="password-repeat">Повторите пароль:</label>
+                        <small></small>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                        <div class="view-pass">
+                            <img src="assets/img/svg/eye-on.svg" alt="">
+                            <img src="assets/img/svg/eye-off.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input-box form-file">
+                        <input type="file" id="upload-file" class="form__file" placeholder="**************">
+                        <p class="upload-file-text">
+                            <span>Прикрепить файл:</span>
+                        <span class="file-name">Выбрать файл</span></p>
+                        <small></small>
+                        <label for="upload-file"></label>
+                        <div class="error d-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M9 0.5C13.6944 0.5 17.5 4.30558 17.5 9C17.5 13.6944 13.6944 17.5 9 17.5C4.30558 17.5 0.5 13.6944 0.5 9C0.5 4.30558 4.30558 0.5 9 0.5ZM12.355 5.64505C12.106 5.39609 11.7023 5.39609 11.4534 5.64505L9 8.09829L6.54661 5.64505L6.48133 5.588C6.23145 5.39782 5.87326 5.41684 5.64505 5.64505L5.588 5.71033C5.39782 5.96021 5.41684 6.3184 5.64505 6.54661L8.09829 9L5.64505 11.4534C5.39609 11.7023 5.39609 12.106 5.64505 12.355C5.89401 12.6039 6.29765 12.6039 6.54661 12.355L9 9.9017L11.4534 12.355L11.5187 12.412C11.7685 12.6022 12.1267 12.5832 12.355 12.355L12.412 12.2897C12.6022 12.0398 12.5832 11.6816 12.355 11.4534L9.9017 9L12.355 6.54661C12.6039 6.29765 12.6039 5.89401 12.355 5.64505Z" fill="#FE1E25"/>
+                            </svg>
+                        </div>
+                        <div class="help">
+                            <img src="assets/img/svg/help_circle_24.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="check" class="check" checked>
+                        <label for="check">Нажимая кнопку «Зарегистрироваться», вы соглашаетесь с политикой обработки персональных данных</label>
+                    </div>
+                    <button class="form__btn btn-base" type="button">Зарегистрироваться</button>
+                    <div class="account-info text-center">
+                        <span>Уже есть аккаунт?</span>
+                        <a href="./user-login.html">Войти</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top d-flex  justify-between align-center">
+                <p class="top-text">Подпишитесь на нашу рассылку
+                    <span>чтоб быть в курсе новостей и обновлений</span></p>
+                <form class="top-form d-flex">
+                    <div class="input-box">
+                        <input type="email" id="email" class="form__inp" placeholder="yourmail@gmail.com">
+                        <label for="email">E-mail:</label>
+                    </div>
+                    <button class="form-btn btn-base">
+                        <span>Подписаться</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9849 11.0422C11.9666 11.24 11.8892 11.4279 11.7627 11.5815C11.6362 11.7352 11.4664 11.8475 11.2751 11.9041C11.0838 11.9607 10.88 11.959 10.6897 11.8991C10.4995 11.8392 10.3315 11.7239 10.2077 11.5681C9.1195 10.7062 7.42235 9.46551 7.42235 9.46551C7.42235 9.46551 6.19427 11.6198 5.97463 11.8405C5.90213 11.9013 5.81776 11.9464 5.72674 11.9728C5.63573 11.9993 5.54006 12.0065 5.44607 11.9941C5.35209 11.9816 5.26178 11.9498 5.18088 11.9005C5.09997 11.8513 5.03027 11.7858 4.97625 11.7082C4.96505 11.6743 4.95179 11.6411 4.9364 11.6088L5.62522 8.1771L10.5373 3.37253L3.83809 7.17901C3.83809 7.17901 0.813035 6.27835 0.363766 6.10239C0.24787 6.03936 0.152297 5.94489 0.0880913 5.82998C0.023886 5.71508 -0.00623899 5.58442 0.00107471 5.45312C0.00838841 5.32183 0.0528319 5.19529 0.129406 5.08815C0.20598 4.98102 0.311534 4.89767 0.43372 4.84778C1.07268 4.5237 12.3443 0.237044 12.7237 0.126696C13.103 0.0163487 14.1014 -0.270955 13.9916 0.696328C13.8818 1.66361 12.0947 10.5113 11.9849 11.0422Z" fill="white"/>
+                          </svg>
+                    </button>
+                </form>
+            </div>
+
+            <div class="footer-middle d-flex justify-between">
+                <div class="left">
+                    <picture class="proff-img"> 
+                        <source srcset="assets/img/webp/title-text.webp" type="image/webp">  
+                        <source srcset="assets/img/png/title-text.png" type="image/png"> 
+                        <img src="assets/img/png/title-text.png" alt="">
+                    </picture>
+                    <p class="left-text">«Профессионалы» @2000−2024. Все права защищены.</p>
+                </div>
+                <div class="right d-flex justify-between">
+                    <div class="item">
+                        <p class="item-title">Меню:</p>
+                        <ul class="item-nav">
+                            <li><a href="#">Проекты</a></li>
+                            <li><a href="./archive.html">Архив</a></li>
+                            <li><a href="#">Фотогалерея</a></li>
+                            <li><a href="#">О компании</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">По вопросам сотрудничества:</p>
+                        <ul class="item-nav">
+                            <li><a href="tel:79039689251">+7 903 968-92-51</a></li>
+                            <li><a href="mailto:info@profipharm.ru">info@profipharm.ru</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <p class="item-title">Социальные сети:</p>
+                        <ul class="item-nav">
+                            <li><a href="#" class="d-flex align-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589Z" fill="#FE1E25"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2111 10.8944C13.9482 10.5259 13.9482 9.47409 13.2111 9.10557L8.44721 6.72361C7.78231 6.39116 7 6.87465 7 7.61803V12.382C7 13.1253 7.78231 13.6088 8.44721 13.2764L13.2111 10.8944Z" fill="white"/>
+                                  </svg>
+                                YouTube
+                            </a></li>
+                            <li><a href="#" class="d-flex align-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589Z" fill="#0077FF"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.375 6.0835C3.48333 11.2835 6.08329 14.4085 10.6416 14.4085H10.9V11.4335C12.575 11.6001 13.8416 12.8251 14.3499 14.4085H16.7167C16.0667 12.0418 14.3583 10.7335 13.2916 10.2335C14.3583 9.61684 15.8582 8.11684 16.2166 6.0835H14.0665C13.5999 7.7335 12.2167 9.2335 10.9 9.37517V6.0835H8.74996V11.8501C7.41663 11.5168 5.73333 9.90017 5.65833 6.0835H3.375Z" fill="white"/>
+                                </svg>
+                                ВКонтакте
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom d-flex justify-between align-center">
+                <ul class="left d-flex justify-between">
+                    <li><a href="./privacy-policy.html">Политика конфиденциальности</a></li>
+                    <li><a href="./processing-policy.html">Политика обработки персональных данных</a></li>
+                </ul>
+                <a href="#header" class="up-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
+                        <rect x="0.5" y="0.5" width="53" height="53" rx="9.5" fill="white"/>
+                        <rect x="0.5" y="0.5" width="53" height="53" rx="9.5" stroke="#EBEFF8"/>
+                        <path d="M26.25 33C26.25 33.4142 26.5858 33.75 27 33.75C27.4142 33.75 27.75 33.4142 27.75 33H26.25ZM27.5303 20.4697C27.2374 20.1768 26.7626 20.1768 26.4697 20.4697L21.6967 25.2426C21.4038 25.5355 21.4038 26.0104 21.6967 26.3033C21.9896 26.5962 22.4645 26.5962 22.7574 26.3033L27 22.0607L31.2426 26.3033C31.5355 26.5962 32.0104 26.5962 32.3033 26.3033C32.5962 26.0104 32.5962 25.5355 32.3033 25.2426L27.5303 20.4697ZM27.75 33V21H26.25V33H27.75Z" fill="#FE1E25"/>
+                      </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/form-regis.js"></script>
+</body>
+</html>
