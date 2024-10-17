@@ -19,7 +19,7 @@ const archive = new Swiper('.swiper-archive', {
           spaceBetween: 16,
         },
         1300: {
-            spaceBetween: 25,
+            spaceBetween: 23,
             slidesPerView: 3,
         },
   }
