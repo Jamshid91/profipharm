@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "ProbaPro";
   src: url(../font/ProbaPro-Regular.woff) format("woff"), url(../font/ProbaPro-Regular.woff2) format("woff2");
@@ -357,6 +358,20 @@ input, textarea, select, button {
   font-size: 15px;
   line-height: normal;
   color: #696F79;
+}
+
+.swiper-btns .btn {
+  position: relative;
+  top: 0;
+  transform: none;
+  margin: 0;
+  cursor: pointer;
+}
+.swiper-btns .btn:first-child {
+  margin-right: 8px;
+}
+.swiper-btns .btn:hover svg path {
+  fill: #E2020C;
 }
 
 .header-box {
@@ -1294,6 +1309,254 @@ input, textarea, select, button {
 .main .contact .form .form__btn {
   margin: 28px 0 0;
 }
+.main .photos-page .title-text {
+  margin: 24px 0;
+}
+.main .photos-page .photos-tab-btns .tab-btn {
+  margin-right: 10px;
+}
+.main .photos-page .photos-tab-btns .tab-btn input {
+  display: none;
+}
+.main .photos-page .photos-tab-btns .tab-btn span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border-radius: 50px;
+  background: #F6F8FC;
+  font-size: 15px;
+  line-height: 16px;
+  white-space: nowrap;
+  cursor: pointer;
+  letter-spacing: -0.3px;
+}
+.main .photos-page .photos-tab-btns .tab-btn input:checked ~ span {
+  background: #3B3B3B;
+  color: #fff;
+  font-weight: 600;
+}
+.main .photos-page .photos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  margin-top: 24px;
+}
+.main .photos-page .photos:first-child {
+  margin-top: 32px;
+}
+.main .photos-page .photos picture {
+  width: 100%;
+}
+.main .photos-page .photos picture img {
+  width: 100%;
+  height: 236px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.main .photos-page .photos picture:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.main .photos-page .photos picture:nth-child(1) img {
+  height: 100%;
+}
+.main .photos-page .photos:nth-child(even) picture:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.main .photos-page .photos:nth-child(even) picture:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.main .photos-page .photos:nth-child(even) picture:nth-child(5) img {
+  height: 100%;
+}
+.main .photos-page .view-nore {
+  margin-top: 24px;
+}
+.main .about-page .about-top {
+  align-items: start;
+}
+.main .about-page .about-top .about-name {
+  padding: 12px 14px;
+  border-radius: 30px;
+  background: #F6F8FC;
+  font-size: 15px;
+  line-height: 15px;
+  color: #696F79;
+  margin-right: 56px;
+  white-space: nowrap;
+}
+.main .about-page .about-top .title-text {
+  width: 90%;
+  margin-bottom: 24px;
+}
+.main .about-page .about-circle {
+  height: 354px;
+  margin: 60px 0 45px;
+  position: relative;
+}
+.main .about-page .about-circle .circle {
+  width: 354px;
+  height: 354px;
+  background: #fff;
+  border: 1px solid #E8ECF3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+}
+.main .about-page .about-circle .circle p {
+  max-width: 240px;
+  letter-spacing: -0.34px;
+}
+.main .about-page .about-circle .circle h3 {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 500;
+  letter-spacing: -0.72px;
+}
+.main .about-page .about-circle .circle h3 span {
+  color: #E2020C;
+}
+.main .about-page .about-circle .circle:nth-child(1) {
+  left: 0;
+  z-index: 1;
+  background: #E2020C;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.main .about-page .about-circle .circle:nth-child(1) p {
+  letter-spacing: normal;
+}
+.main .about-page .about-circle .circle:nth-child(2) {
+  left: 24%;
+  z-index: 2;
+}
+.main .about-page .about-circle .circle:nth-child(3) {
+  left: 49%;
+  z-index: 3;
+}
+.main .about-page .about-circle .circle:nth-child(4) {
+  right: 0;
+  z-index: 4;
+}
+.main .about-page .about-project .projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 24px;
+  margin: 32px 0 60px;
+}
+.main .about-page .about-project .projects .project {
+  border-radius: 12px;
+  background: #F6F8FC;
+  padding: 32px;
+}
+.main .about-page .about-project .projects .project-title {
+  margin: 32px 0 8px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.main .about-page .about-project .projects .project-subtitle {
+  color: #696F79;
+  width: 90%;
+}
+.main .about-page .pagination {
+  display: none;
+  justify-content: center;
+  margin-top: 32px;
+}
+.main .about-page .about-review .swiper-review {
+  margin-top: 32px;
+}
+.main .about-page .about-review .swiper-review .review {
+  padding: 32px 32px 32px 95px;
+  position: relative;
+  border-radius: 12px;
+  border: 1px solid #E8ECF3;
+}
+.main .about-page .about-review .swiper-review .review::before {
+  content: url(../img/svg/“.svg);
+  position: absolute;
+  top: 32px;
+  left: 32px;
+}
+.main .about-page .about-review .swiper-review .review .user-img {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 24px;
+}
+.main .about-page .about-review .swiper-review .review .user-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.main .about-page .about-review .swiper-review .review .user-job {
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #696F79;
+  margin: 8px 0 16px;
+}
+.main .about-page .about-review .swiper-review .review .review-text {
+  color: #464B56;
+}
+.main .about-page .about-review .swiper-review .review .review-data {
+  font-size: 15px;
+  line-height: 15px;
+  color: #696F79;
+  padding: 12px 14px;
+  border-radius: 30px;
+  background: #F6F8FC;
+  display: inline-block;
+  margin-top: 24px;
+}
+.main .about-page .about-partners {
+  margin-top: 60px;
+}
+.main .about-page .about-partners .swiper-partner {
+  margin-top: 32px;
+}
+.main .about-page .about-partners .partner {
+  text-align: center;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #696F79;
+}
+.main .about-page .about-partners .partner-img {
+  border-radius: 12px;
+  border: 1px solid #EBEFF8;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.main .about-page .about-partners .partner-img picture {
+  width: 192px;
+  height: 192px;
+}
+.main .about-page .about-partners .partner-img picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
 .footer-top {
   padding: 26px 0;
@@ -1845,6 +2108,50 @@ input, textarea, select, button {
     width: 40%;
     margin-bottom: 24px;
   }
+  .main .photos-page .photos {
+    grid-gap: 16px;
+    margin-top: 16px;
+  }
+  .main .photos-page .photos picture img {
+    width: 100%;
+    height: 170px;
+  }
+  .main .about-page .about-circle {
+    height: 254px;
+  }
+  .main .about-page .about-circle .circle {
+    width: 254px;
+    height: 254px;
+  }
+  .main .about-page .about-circle .circle p {
+    max-width: 186px;
+  }
+  .main .about-page .about-circle .circle h3 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .main .about-page .about-circle .circle:nth-child(1) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .about-page .about-project .projects {
+    grid-gap: 16px;
+    margin: 32px 0 50px;
+  }
+  .main .about-page .about-project .projects .project-title {
+    margin: 32px 0 8px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .about-page .about-project .projects .project-subtitle {
+    width: 95%;
+  }
+  .main .about-page .pagination {
+    display: flex;
+  }
+  .main .about-page .swiper-btns {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .header-box {
@@ -2250,6 +2557,74 @@ input, textarea, select, button {
   .main .contact .form .form__btn {
     margin: 22px 0 0;
   }
+  .main .photos-page .photos picture img {
+    height: 128px;
+  }
+  .main .about-page .about-circle {
+    height: 323px;
+  }
+  .main .about-page .about-circle .circle {
+    width: 326px;
+    height: 326px;
+  }
+  .main .about-page .about-circle .circle p {
+    max-width: 186px;
+  }
+  .main .about-page .about-circle .circle h3 {
+    font-size: 30px;
+  }
+  .main .about-page .about-circle .circle:nth-child(2) {
+    width: 208px;
+    height: 208px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -24px;
+    z-index: 5;
+  }
+  .main .about-page .about-circle .circle:nth-child(2) p {
+    max-width: 140px;
+  }
+  .main .about-page .about-circle .circle:nth-child(3) {
+    width: 208px;
+    height: 208px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -24px;
+    z-index: 6;
+  }
+  .main .about-page .about-circle .circle:nth-child(3) p {
+    max-width: 140px;
+  }
+  .main .about-page .about-project .projects {
+    margin: 32px 0;
+  }
+  .main .about-page .about-project .projects .project-subtitle {
+    width: 100%;
+    font-size: 16px;
+  }
+  .main .about-page .about-review .swiper-review {
+    margin-top: 32px;
+  }
+  .main .about-page .about-review .swiper-review .review {
+    padding: 32px;
+  }
+  .main .about-page .about-review .swiper-review .review::before {
+    display: none;
+  }
+  .main .about-page .about-review .swiper-review .review::after {
+    content: url(../img/svg/“-r.svg);
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+  .main .about-page .about-review .swiper-review .review .user-name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main .about-page .about-review .swiper-review .review .review-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
   .footer-top {
     padding: 24px 0;
     flex-direction: column;
@@ -2479,6 +2854,113 @@ input, textarea, select, button {
   .main .contact .form .form__btn {
     margin: 22px 0 0;
   }
+  .main .about-page .about-top {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .main .about-page .about-top .about-name {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 0;
+  }
+  .main .about-page .about-top .title-text {
+    width: 100%;
+    margin: 24px 0;
+  }
+  .main .about-page .about-circle {
+    width: 345px;
+    height: 460px;
+    margin: 32px auto;
+  }
+  .main .about-page .about-circle .circle {
+    width: 250px;
+    height: 250px;
+  }
+  .main .about-page .about-circle .circle p {
+    max-width: 175px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main .about-page .about-circle .circle h3 {
+    font-size: 28px;
+  }
+  .main .about-page .about-circle .circle:nth-child(2) {
+    width: 144px;
+    height: 144px;
+    left: 200px;
+    transform: none;
+    top: 0;
+    z-index: 5;
+  }
+  .main .about-page .about-circle .circle:nth-child(2) p {
+    max-width: 115px;
+  }
+  .main .about-page .about-circle .circle:nth-child(3) {
+    width: 144px;
+    height: 144px;
+    left: 0;
+    transform: none;
+    bottom: 98px;
+    z-index: 6;
+  }
+  .main .about-page .about-circle .circle:nth-child(3) p {
+    max-width: 115px;
+  }
+  .main .about-page .about-circle .circle:nth-child(4) {
+    bottom: 0;
+  }
+  .main .about-page .about-project .projects {
+    margin: 32px 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main .about-page .about-project .projects .project {
+    padding: 24px;
+  }
+  .main .about-page .about-project .projects .project-title {
+    margin: 24px 0 8px;
+  }
+  .main .about-page .about-review .title-text {
+    text-align: center;
+    width: 100%;
+  }
+  .main .about-page .about-review .swiper-review {
+    margin-top: 24px;
+  }
+  .main .about-page .about-review .swiper-review .review {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .main .about-page .about-review .swiper-review .review::after {
+    content: url(../img/svg/“-r.svg);
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .main .about-page .about-review .swiper-review .review .user-name {
+    margin-top: 16px;
+  }
+  .main .about-page .about-review .swiper-review .review .review-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main .about-page .about-review .swiper-review .review .review-data {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .main .about-page .about-partners {
+    margin-top: 32px;
+  }
+  .main .about-page .about-partners .swiper-partner {
+    margin-top: 24px;
+  }
+  .main .about-page .about-partners .partner-img {
+    margin-bottom: 16px;
+  }
+  .main .about-page .about-partners .partner-img picture {
+    width: 244px;
+    height: 203px;
+  }
 }
 @media (max-width: 576px) {
   .container {
@@ -2603,7 +3085,7 @@ input, textarea, select, button {
     display: flex;
   }
   .main .block4 .swiper-wrapper {
-    grid-gap: 0;
+    grid-gap: 0px;
     margin: 24px 0;
     display: flex;
   }
@@ -2778,6 +3260,40 @@ input, textarea, select, button {
     text-indent: 0;
     padding: 16px;
     height: 54px;
+  }
+  .main .photos-page .title-text {
+    margin: 16px 0 24px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .main .photos-page .photos-tab-btns {
+    overflow-x: scroll;
+  }
+  .main .photos-page .photos {
+    grid-template-columns: repeat(1, 1fr);
+    display: none;
+    grid-gap: 8px;
+  }
+  .main .photos-page .photos:first-child {
+    display: grid;
+  }
+  .main .photos-page .photos picture {
+    height: 100%;
+  }
+  .main .photos-page .photos picture img {
+    height: 261px !important;
+  }
+  .main .photos-page .photos picture:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  .main .photos-page .photos:nth-child(even) picture:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
   .footer-top .top-text {
     font-size: 18px;
