@@ -237,7 +237,7 @@
 
     .contact {
       &-item {
-        margin: 40px 0 8;
+        margin: 40px 0 8px;
         .item {
           width: 40%;
           margin-bottom: 24px;
@@ -376,6 +376,35 @@
               line-height: 14px;
             }
           }
+        }
+      }
+
+      .card {
+        .title-text {
+          margin-top: 16px;
+        }
+        .category-photo {
+          height: 325px;
+        }
+        .card-info {
+          .subtitle-text {
+            font-size: 20px;
+            line-height: 24px;
+          }
+          .hidden-text {
+            -webkit-line-clamp: 10;
+          }
+        }
+      }
+
+      .subscribe {
+        margin: 40px 0 24px;
+        .subtitle-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .info-text {
+          margin: 16px 0 24px;
         }
       }
     }
@@ -1032,19 +1061,24 @@
     }
 
     .categories {
-      &-top {
-      }
-
       &-item {
         display: none;
       }
 
+      &-top {
+        .categories-btn {
+          display: flex;
+        }
+      }
       .categories-box {
         .category-item {
           .item-img {
             height: 201px;
           }
         }
+      }
+      .categories-card {
+        display: flex;
       }
     }
   }
@@ -1876,6 +1910,11 @@
       }
     }
 
+    .head-page {
+      white-space: nowrap;
+      overflow: hidden;
+      width: 102%;
+    }
     .categories {
       .categories-box {
         .category-item {
@@ -1898,6 +1937,60 @@
             font-size: 14px;
             line-height: 14px;
             margin-right: 8px;
+          }
+        }
+      }
+
+      .banner-box {
+        min-height: 500px;
+      }
+      .card {
+        .category-photo {
+          height: 215px;
+        }
+        .card-info {
+          .hidden-text {
+            background: -webkit-linear-gradient(#000, #0004);
+            -webkit-background-clip: text;
+            -webkit-line-clamp: 15;
+          }
+        }
+      }
+
+      .subscribe {
+        margin: 32px;
+      }
+      .card-bottom {
+        .info-list {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    }
+
+    .application {
+      padding: 24px 0;
+      .title-text {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      .title-subtext {
+        margin: 16px 0 50px;
+        font-size: 16px;
+        line-height: 22px;
+      }
+      .select {
+        margin-top: 42px;
+        margin-bottom: 0;
+        &-head {
+          span {
+            &:first-child {
+              position: absolute;
+              top: -25px;
+              left: 0;
+              font-size: 14px;
+              line-height: normal;
+            }
           }
         }
       }

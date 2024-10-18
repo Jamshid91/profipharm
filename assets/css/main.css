@@ -1703,6 +1703,7 @@ input, textarea, select, button {
   cursor: pointer;
   font-size: 16px;
   margin-right: 16px;
+  display: none;
 }
 .main .categories-top .categories-btn span {
   display: flex;
@@ -1736,6 +1737,7 @@ input, textarea, select, button {
 }
 .main .categories .banner-box {
   align-items: start;
+  min-height: 768px;
 }
 .main .categories-item {
   min-width: 305px;
@@ -1756,7 +1758,7 @@ input, textarea, select, button {
 .main .categories-item .category-btn input {
   display: none;
 }
-.main .categories-item .category-btn p {
+.main .categories-item .category-btn span {
   padding: 8px 16px;
   border-radius: 8px;
   background: #fff;
@@ -1765,7 +1767,7 @@ input, textarea, select, button {
   justify-content: space-between;
   font-weight: 500;
 }
-.main .categories-item .category-btn p span {
+.main .categories-item .category-btn span small {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1778,11 +1780,11 @@ input, textarea, select, button {
   font-weight: 700;
   color: #696F79;
 }
-.main .categories-item .category-btn input:checked ~ p {
+.main .categories-item .category-btn input:checked ~ span {
   background: #E2020C;
   color: #fff;
 }
-.main .categories-item .category-btn input:checked ~ p span {
+.main .categories-item .category-btn input:checked ~ span small {
   background: #fff;
   color: #E2020C;
 }
@@ -1874,6 +1876,110 @@ input, textarea, select, button {
 .main .categories .categories-box .view-more {
   margin-top: 16px;
 }
+.main .categories .categories-card {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.main .categories .card .title-text {
+  margin-top: 24px;
+}
+.main .categories .card .category-photo {
+  display: inline-block;
+  width: 100%;
+  height: 485px;
+  margin-top: 32px;
+}
+.main .categories .card .category-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.main .categories .card .card-info {
+  font-size: 16px;
+  line-height: 22px;
+  color: #464B56;
+  letter-spacing: -0.34px;
+}
+.main .categories .card .card-info .subtitle-text {
+  margin: 24px 0 16px;
+}
+.main .categories .card .card-info .hidden-text {
+  background: -webkit-linear-gradient(#000, rgba(0, 0, 0, 0.0666666667));
+  -webkit-background-clip: text;
+  color: #464B56;
+  -webkit-text-fill-color: transparent;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  margin-top: 24px;
+  letter-spacing: -0.34px;
+}
+.main .categories .subscribe {
+  margin: 64px 0 32px;
+  border-radius: 16px;
+  border: 1px solid #EBEFF8;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.main .categories .subscribe .info-text {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 16px 0 32px;
+}
+.main .categories .subscribe-btn {
+  width: 296px;
+}
+.main .categories .card-bottom {
+  border-top: 1px solid #EBEFF8;
+  padding-top: 24px;
+}
+.main .categories .card-bottom .info-list {
+  padding: 12px 14px;
+  border-radius: 50px;
+  background: #F6F8FC;
+  font-size: 15px;
+  line-height: 15px;
+  color: #696F79;
+  margin-right: 12px;
+}
+.main .categories .card-bottom .backTo {
+  margin-top: 32px;
+}
+.main .categories .categories-empty {
+  margin-top: 32px;
+}
+.main .categories .categories-empty .info-text {
+  margin-top: 8px;
+}
+.main .categories .card-list {
+  margin: 24px 0;
+}
+.main .categories .card-list li {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.main .categories .card-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #E2020C;
+  margin-right: 12px;
+}
 .main .filter-menu {
   position: absolute;
   top: 0;
@@ -1913,17 +2019,17 @@ input, textarea, select, button {
 .main .filter-menu .filter-content .category-btn input {
   display: none;
 }
-.main .filter-menu .filter-content .category-btn p {
+.main .filter-menu .filter-content .category-btn span {
   padding: 12px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.main .filter-menu .filter-content .category-btn p::after {
+.main .filter-menu .filter-content .category-btn span::after {
   content: url(../img/svg/play-dote.svg);
   display: none;
 }
-.main .filter-menu .filter-content .category-btn input:checked ~ p::after {
+.main .filter-menu .filter-content .category-btn input:checked ~ span::after {
   display: block;
 }
 @keyframes anim-filter {
@@ -1933,6 +2039,15 @@ input, textarea, select, button {
   to {
     left: 0;
   }
+}
+.main .application {
+  padding: 38px 0 48px;
+}
+.main .application .title-subtext {
+  margin: 16px 0 32px;
+}
+.main .application .select {
+  margin-bottom: 20px;
 }
 
 .footer-top {
@@ -2479,7 +2594,7 @@ input, textarea, select, button {
     margin-bottom: 0;
   }
   .main .contact-item {
-    margin: 40px 0 8;
+    margin: 40px 0 8px;
   }
   .main .contact-item .item {
     width: 40%;
@@ -2587,6 +2702,29 @@ input, textarea, select, button {
   .main .categories .categories-box .category-item .item-info .info-list {
     font-size: 14px;
     line-height: 14px;
+  }
+  .main .categories .card .title-text {
+    margin-top: 16px;
+  }
+  .main .categories .card .category-photo {
+    height: 325px;
+  }
+  .main .categories .card .card-info .subtitle-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main .categories .card .card-info .hidden-text {
+    -webkit-line-clamp: 10;
+  }
+  .main .categories .subscribe {
+    margin: 40px 0 24px;
+  }
+  .main .categories .subscribe .subtitle-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .main .categories .subscribe .info-text {
+    margin: 16px 0 24px;
   }
 }
 @media (max-width: 1024px) {
@@ -3109,8 +3247,14 @@ input, textarea, select, button {
   .main .categories-item {
     display: none;
   }
+  .main .categories-top .categories-btn {
+    display: flex;
+  }
   .main .categories .categories-box .category-item .item-img {
     height: 201px;
+  }
+  .main .categories .categories-card {
+    display: flex;
   }
   .footer-top {
     padding: 24px 0;
@@ -3801,6 +3945,11 @@ input, textarea, select, button {
   .main .release-page .participants-partners .participants-img {
     height: 250px;
   }
+  .main .head-page {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 102%;
+  }
   .main .categories .categories-box .category-item {
     width: 100%;
   }
@@ -3817,6 +3966,47 @@ input, textarea, select, button {
     font-size: 14px;
     line-height: 14px;
     margin-right: 8px;
+  }
+  .main .categories .banner-box {
+    min-height: 500px;
+  }
+  .main .categories .card .category-photo {
+    height: 215px;
+  }
+  .main .categories .card .card-info .hidden-text {
+    background: -webkit-linear-gradient(#000, rgba(0, 0, 0, 0.2666666667));
+    -webkit-background-clip: text;
+    -webkit-line-clamp: 15;
+  }
+  .main .categories .subscribe {
+    margin: 32px;
+  }
+  .main .categories .card-bottom .info-list {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .main .application {
+    padding: 24px 0;
+  }
+  .main .application .title-text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .main .application .title-subtext {
+    margin: 16px 0 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .main .application .select {
+    margin-top: 42px;
+    margin-bottom: 0;
+  }
+  .main .application .select-head span:first-child {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    font-size: 14px;
+    line-height: normal;
   }
   .footer-top .top-text {
     font-size: 18px;

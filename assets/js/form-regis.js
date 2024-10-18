@@ -1,4 +1,4 @@
-const user_name = document.getElementById('name'),
+const fio = document.getElementById('name'),
       last_name = document.getElementById('last-name'),
       first_name = document.getElementById('first-name'),
       city = document.getElementById('city'),
@@ -15,7 +15,7 @@ const user_name = document.getElementById('name'),
 // login
 submitBtnForm.addEventListener('click', () => {
     checkInputs()
-    let successName = user_name.parentElement.children[2].classList,
+    let successName = fio.parentElement.children[2].classList,
         successLast_name = last_name.parentElement.children[2].classList,
         successFirst_name = first_name.parentElement.children[2].classList,
         successCity = city.parentElement.children[2].classList,
@@ -30,7 +30,7 @@ submitBtnForm.addEventListener('click', () => {
   });
 
   function checkInputs() {
-    const user_nameValue = user_name.value.trim(),
+    const fioValue = fio.value.trim(),
           last_nameValue = last_name.value.trim(),
           first_nameValue = first_name.value.trim(),
           cityValue = city.value.trim(),
@@ -41,11 +41,11 @@ submitBtnForm.addEventListener('click', () => {
 
     
     
-    if(user_nameValue === '') {
-        setErrorFor(user_name, 'Ошибка: Неверный запрос',)
+    if(fioValue === '') {
+        setErrorFor(fio, 'Ошибка: Неверный запрос',)
     } else {
-        setSuccesFor(user_name, '')
-        user_name.parentElement.children[2].classList.add('success')
+        setSuccesFor(fio, '')
+        fio.parentElement.children[2].classList.add('success')
       }
   
     if(last_nameValue === '') {
