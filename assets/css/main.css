@@ -65,6 +65,7 @@ ul, ol {
 a {
   text-decoration: none;
   color: inherit;
+  font-family: "ProbaPro", sans-serif;
 }
 
 a:hover {
@@ -82,11 +83,13 @@ button {
   border: none;
   padding: 0;
   cursor: pointer;
+  font-family: "ProbaPro", sans-serif;
 }
 
 input, textarea, select, button {
   border: none;
   outline: none;
+  font-family: "ProbaPro", sans-serif;
 }
 
 .container {
@@ -363,6 +366,11 @@ input, textarea, select, button {
   color: #696F79;
 }
 
+picture {
+  display: inline-block;
+  height: auto;
+}
+
 .swiper-btns .btn {
   position: relative;
   top: 0;
@@ -375,6 +383,41 @@ input, textarea, select, button {
 }
 .swiper-btns .btn:hover svg path {
   fill: #E2020C;
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.video .video-poster {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.video .video-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.playVideo .video-poster {
+  display: none;
 }
 
 .header-box {
@@ -432,6 +475,43 @@ input, textarea, select, button {
 }
 .header .clickPr-btn svg {
   transform: rotate(45deg);
+}
+.header .new-link {
+  width: auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 20px 30px;
+  border-radius: 8px;
+  border: 1.3px solid #EBEFF8;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 500;
+}
+.header .new-link span {
+  color: #FE1E25;
+  display: inline-block;
+  margin-right: 6px;
+}
+.header .btn_mob {
+  display: flex;
+  margin-right: 32px;
+}
+.header .authorization {
+  width: 176px;
+  height: 52px;
+  border-radius: 8px;
+  border: 1px solid #EBEFF8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-weight: 500;
+}
+.header .authorization:hover {
+  border-color: rgba(254, 30, 37, 0.2509803922);
+  color: #E2020C;
 }
 .header-link {
   width: 260px;
@@ -621,6 +701,9 @@ input, textarea, select, button {
   grid-gap: 24px;
   padding: 0 20px;
 }
+.main .block1 .full_box {
+  grid-template-columns: repeat(1, 1fr);
+}
 .main .block1-png img {
   width: 100%;
   height: 275px;
@@ -684,7 +767,7 @@ input, textarea, select, button {
   content: url(../img/svg/play-circlesvg.svg);
   position: absolute;
   left: 5px;
-  top: 5px;
+  top: 2px;
 }
 .main .block2 .block2-box .box-right {
   width: 33%;
@@ -701,6 +784,7 @@ input, textarea, select, button {
 }
 .main .block2 .block2-box .box-right .subtitle-text {
   margin: 24px 0 20px;
+  text-align: center;
 }
 .main .block2 .block2-box .box-right .take-part {
   margin: 32px 0 16px;
@@ -722,13 +806,8 @@ input, textarea, select, button {
 .main .block3 .block3-box {
   margin: 32px 0;
 }
-.main .block3 .block3-box .box-img {
+.main .block3 .block3-box .video {
   width: 49%;
-}
-.main .block3 .block3-box .box-img img {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 12px;
 }
 .main .block3 .block3-box .box-right {
   width: 49%;
@@ -769,10 +848,10 @@ input, textarea, select, button {
   justify-content: center;
   margin-top: 24px;
 }
-.main .block3 .archive-item .item-img img {
-  width: 100%;
+.main .block3 .archive-item .video {
   height: 242px;
-  border-radius: 12px;
+}
+.main .block3 .archive-item .video img {
   object-fit: cover;
 }
 .main .block3 .archive-item .item-info {
@@ -892,7 +971,8 @@ input, textarea, select, button {
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.main .block4 .swiper-wrapper .swiper-slide:nth-child(1) img {
+.main .block4 .swiper-wrapper .swiper-slide:nth-child(1) img,
+.main .block4 .swiper-wrapper .swiper-slide:nth-child(1) picture {
   height: 100%;
 }
 .main .archive-top {
@@ -977,19 +1057,20 @@ input, textarea, select, button {
 .main .archive-tabs .archive-item {
   margin-top: 24px;
   display: flex;
+  justify-content: space-between;
 }
-.main .archive-tabs .archive-item .item-img {
-  margin-right: 24px;
-  min-width: 410px;
+.main .archive-tabs .archive-item .video {
+  width: 28%;
   height: 233px;
 }
-.main .archive-tabs .archive-item .item-img img {
+.main .archive-tabs .archive-item .video img {
   width: 100%;
   height: 100%;
   border-radius: 12px;
   object-fit: cover;
 }
 .main .archive-tabs .archive-item .item-info {
+  width: 70%;
   border-radius: 12px;
   border: 1px solid #EBEEF2;
   padding: 24px 14px 24px 24px;
@@ -1114,6 +1195,16 @@ input, textarea, select, button {
 .main .profile .profile-tab-box {
   width: 100%;
 }
+.main .profile .profile-empty {
+  border-radius: 12px;
+  border: 1px solid #EBEEF2;
+  padding: 60px 32px;
+}
+.main .profile .profile-empty img {
+  margin-top: 48px;
+  max-width: 100%;
+  object-fit: contain;
+}
 .main .profile .profile-item {
   min-width: 305px;
   height: 335px;
@@ -1201,7 +1292,7 @@ input, textarea, select, button {
   margin-right: 96px;
 }
 .main .profile .form .subscription {
-  width: 49%;
+  width: 100%;
   padding: 36px 29px;
   border-radius: 12px;
   border: 1px solid #EBEFF8;
@@ -1275,6 +1366,12 @@ input, textarea, select, button {
 }
 .main .contact-item {
   margin: 64px 0;
+}
+.main .contact-item .item {
+  margin-right: 40px;
+}
+.main .contact-item .item:last-child {
+  margin-right: 0;
 }
 .main .contact-item .item svg {
   margin-right: 24px;
@@ -1797,12 +1894,12 @@ input, textarea, select, button {
   flex-direction: column;
   margin-top: 24px;
 }
-.main .categories .categories-box .category-item .item-img {
+.main .categories .categories-box .category-item .video {
   width: 100%;
   height: 278px;
   margin-bottom: 16px;
 }
-.main .categories .categories-box .category-item .item-img img {
+.main .categories .categories-box .category-item .video img {
   width: 100%;
   height: 100%;
   border-radius: 12px;
@@ -1884,6 +1981,13 @@ input, textarea, select, button {
 }
 .main .categories .card .title-text {
   margin-top: 24px;
+}
+.main .categories .card .category-video {
+  height: 485px;
+  margin: 32px 0;
+}
+.main .categories .card .category-video img {
+  object-fit: cover;
 }
 .main .categories .card .category-photo {
   display: inline-block;
@@ -2050,6 +2154,146 @@ input, textarea, select, button {
   margin-bottom: 20px;
 }
 
+.policy-item .item-list .lists {
+  padding-left: 10px;
+}
+.policy-item .item-list .lists li {
+  margin: 0 !important;
+}
+.policy-item .item-list .lists li p {
+  display: flex;
+  align-items: start;
+}
+.policy-item .item-list .lists li p::before {
+  content: "·";
+  margin-right: 5px;
+  font-size: 25px;
+}
+
+.user-box {
+  position: relative;
+}
+.user-box .profile_btn {
+  cursor: pointer;
+}
+.user-box .profile-nav {
+  width: 190px;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background: #fff;
+  border: 1px solid #E8ECF3;
+  border-radius: 8px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  animation: animPro 0.3s linear;
+  display: none;
+  padding: 8px 0;
+}
+.user-box .profile-nav .nav-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: #131313;
+  padding: 8px 16px;
+  transition: 0.3s all;
+}
+.user-box .profile-nav .nav-item:last-child {
+  margin-bottom: 0;
+}
+.user-box .profile-nav .nav-item a {
+  display: flex;
+  align-items: center;
+}
+.user-box .profile-nav .nav-item a svg {
+  margin-right: 8px;
+}
+.user-box .profile-nav .nav-item:hover {
+  background: #E2020C;
+  color: #fff;
+}
+.user-box .profile-nav .nav-item:hover svg path {
+  fill: #fff;
+}
+@keyframes animPro {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(1);
+  }
+}
+
+.showProfile .profile_btn svg {
+  transform: rotate(180deg);
+}
+.showProfile .profile-nav {
+  display: flex;
+}
+
+.video-algorithm {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  margin-top: -24px;
+  padding-bottom: 48px;
+  border-radius: 0 0 18px 18px;
+}
+.video-algorithm .video-box {
+  max-width: 927px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.video-algorithm .video {
+  height: 522px;
+}
+.video-algorithm .video iframe {
+  width: 100%;
+  height: 100%;
+}
+.video-algorithm .video-info {
+  border-radius: 12px;
+  border: 1px solid #E8ECF3;
+  padding: 32px;
+  margin-top: 24px;
+}
+.video-algorithm .video-info .info-title {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 500;
+}
+.video-algorithm .video-info .info-title span:last-child {
+  position: relative;
+  padding-left: 40px;
+}
+.video-algorithm .video-info .info-title span:last-child::before {
+  content: url(../img/svg/play-circlesvg.svg);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.video-algorithm .video-info .info-text {
+  font-size: 17px;
+  line-height: 24px;
+  margin: 16px 0 20px;
+  color: #464b56;
+}
+.video-algorithm .video-info .info-data {
+  padding: 12px;
+  background: #f6f8fc;
+  color: #696F79;
+  border-radius: 50px;
+  font-size: 15px;
+  line-height: 15px;
+  display: inline-block;
+}
+
+@media (max-width: 992px) {
+  .user-box .profile-nav {
+    top: 50px;
+  }
+}
 .footer-top {
   padding: 26px 0;
 }
@@ -2092,6 +2336,29 @@ input, textarea, select, button {
 .footer-top .top-form .form-btn span {
   display: inline-block;
   margin-right: 8px;
+}
+.footer-top .success label {
+  display: none;
+}
+.footer-top .success .form__inp {
+  padding: 0 53px;
+  pointer-events: none;
+}
+.footer-top .success .input-box {
+  position: relative;
+}
+.footer-top .success .input-box .check {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+}
+.footer-top .success .form-btn {
+  pointer-events: none;
+  background: #EBEFF8;
+  color: #919AA8;
+}
+.footer-top .success .form-btn svg path {
+  fill: #919AA8;
 }
 .footer-middle {
   padding: 52px 0;
@@ -2441,6 +2708,12 @@ input, textarea, select, button {
     width: 220px;
     margin-right: 20px;
   }
+  .header .new-link {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 20px 10px;
+    margin-right: 15px;
+  }
   .main .parallax .parallax-bg .object:nth-child(1) {
     left: -3%;
   }
@@ -2465,6 +2738,12 @@ input, textarea, select, button {
   .main .block2 .block2-box .box-right .left-img img {
     width: 149px;
     height: 149px;
+  }
+  .main .block2 .block2-box .box-right .box-right-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .main .block2 .block2-box .box-right .subtitle-text {
     margin: 24px 0 20px;
@@ -2536,7 +2815,7 @@ input, textarea, select, button {
   .main .archive-tabs .archive-item {
     margin-top: 15px;
   }
-  .main .archive-tabs .archive-item .item-img {
+  .main .archive-tabs .archive-item .video {
     margin-right: 16px;
     height: 199px;
     min-width: 353px;
@@ -2684,7 +2963,7 @@ input, textarea, select, button {
   .main .categories .categories-box .category-item {
     margin-top: 16px;
   }
-  .main .categories .categories-box .category-item .item-img {
+  .main .categories .categories-box .category-item .video {
     height: 175px;
   }
   .main .categories .categories-box .category-item .item-info {
@@ -2706,7 +2985,8 @@ input, textarea, select, button {
   .main .categories .card .title-text {
     margin-top: 16px;
   }
-  .main .categories .card .category-photo {
+  .main .categories .card .category-photo,
+  .main .categories .card .category-video {
     height: 325px;
   }
   .main .categories .card .card-info .subtitle-text {
@@ -2737,23 +3017,15 @@ input, textarea, select, button {
   .header .btn-base {
     display: none;
   }
-  .header-link {
-    width: auto;
+  .header .new-link {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    white-space: nowrap;
-    padding: 20px 30px;
-    border-radius: 8px;
-    border: 1.3px solid #EBEFF8;
     font-size: 16px;
     line-height: 16px;
-    font-weight: 500;
+    padding: 20px 30px;
+    margin-right: 0;
   }
-  .header-link span {
-    color: #FE1E25;
-    display: inline-block;
-    margin-right: 6px;
+  .header .btn_mob {
+    display: none;
   }
   .header .menu-btn {
     display: flex;
@@ -2917,6 +3189,9 @@ input, textarea, select, button {
   .header .menu {
     padding-top: 91px;
   }
+  .header-link {
+    margin-right: 0;
+  }
   .main .parallax .title-text img {
     width: 595px;
   }
@@ -2933,25 +3208,30 @@ input, textarea, select, button {
   .main .block2 .block2-box .box-left {
     width: 100%;
   }
+  .main .block2 .block2-box .box-left .left-info {
+    margin-top: 12px;
+  }
   .main .block2 .block2-box .box-right {
     width: 100%;
     margin-top: 16px;
     flex-direction: row-reverse;
+    padding: 36px 24px;
   }
   .main .block2 .block2-box .box-right-info {
-    text-align-last: left;
+    text-align: left;
     padding-right: 28px;
   }
   .main .block2 .block2-box .box-right .left-img img {
-    min-width: 209px;
-    min-height: 209px;
+    min-width: 200px;
+    min-height: 200px;
   }
   .main .block2 .block2-box .box-right .subtitle-text {
     margin: 0;
     margin-bottom: 24px;
   }
-  .main .block2 .block2-box .box-right-btn {
-    display: flex;
+  .main .block2 .block2-box .box-right .box-right-btn {
+    justify-content: start;
+    flex-direction: row;
     margin-top: 24px;
   }
   .main .block2 .block2-box .box-right .take-part {
@@ -2964,7 +3244,7 @@ input, textarea, select, button {
   .main .block3 .info-text {
     margin-top: 18px;
   }
-  .main .block3 .block3-box .box-img {
+  .main .block3 .block3-box .video {
     width: 100%;
   }
   .main .block3 .block3-box .box-right {
@@ -3113,6 +3393,7 @@ input, textarea, select, button {
   }
   .main .contact-item .item {
     width: 50%;
+    margin-right: 0;
   }
   .main .contact-item .item p {
     font-size: 18px;
@@ -3250,11 +3531,31 @@ input, textarea, select, button {
   .main .categories-top .categories-btn {
     display: flex;
   }
-  .main .categories .categories-box .category-item .item-img {
+  .main .categories .categories-box .category-item .video {
     height: 201px;
   }
   .main .categories .categories-card {
     display: flex;
+  }
+  .video-algorithm {
+    padding-bottom: 22px;
+  }
+  .video-algorithm .video {
+    height: 410px;
+  }
+  .video-algorithm .video-info {
+    padding: 24px;
+  }
+  .video-algorithm .video-info .info-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .video-algorithm .video-info .info-title span:last-child {
+    position: relative;
+    padding-left: 40px;
+  }
+  .video-algorithm .video-info .info-title span:last-child::before {
+    top: 1px;
   }
   .footer-top {
     padding: 24px 0;
@@ -3318,13 +3619,15 @@ input, textarea, select, button {
     width: 49%;
     flex-direction: column;
   }
-  .main .archive-tabs .archive-item .item-img {
+  .main .archive-tabs .archive-item .video {
     margin-right: 0;
     height: 200px;
     min-width: 100%;
     margin-bottom: 16px;
   }
   .main .archive-tabs .archive-item .item-info {
+    width: 100%;
+    min-height: 200px;
     padding: 24px 24px 20px;
   }
   .main .archive-tabs .archive-item .item-info .info-name {
@@ -3409,7 +3712,7 @@ input, textarea, select, button {
   .main .block2 .block2-box .box-right .left-img {
     display: none;
   }
-  .main .block2 .block2-box .box-right-btn {
+  .main .block2 .block2-box .box-right .box-right-btn {
     display: flex;
     justify-content: center;
   }
@@ -3613,8 +3916,12 @@ input, textarea, select, button {
   .container {
     padding: 0 15px;
   }
-  .header-link {
+  .header .new-link {
     display: none;
+  }
+  .header .authorization {
+    width: 130px;
+    height: 40px;
   }
   .header .menu-btn {
     width: 40px;
@@ -3625,7 +3932,7 @@ input, textarea, select, button {
     height: 40px;
   }
   .header .menu {
-    padding-top: 80px;
+    padding-top: 74px;
   }
   .header .menu-content {
     width: 97%;
@@ -3669,11 +3976,14 @@ input, textarea, select, button {
   .main .block1-png img {
     height: 196px;
   }
-  .main .block2 .block2-box .box-right-btn {
+  .main .block2 .block2-box .box-right .box-right-btn {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .main .block2 .block2-box .box-right .take-part {
     width: 100%;
+    margin: 0;
   }
   .main .block2 .block2-box .box-right .project-rules {
     width: 100%;
@@ -3798,7 +4108,7 @@ input, textarea, select, button {
     margin-top: 16px;
     width: 100%;
   }
-  .main .archive-tabs .archive-item .item-img {
+  .main .archive-tabs .archive-item .video {
     height: 194px;
   }
   .main .notfound-box {
@@ -3850,6 +4160,14 @@ input, textarea, select, button {
   }
   .main .profile .profile-item .user-box .user-phone {
     font-size: 14px;
+  }
+  .main .profile .profile-empty {
+    border-radius: 12px;
+    border: none;
+    padding: 30px 0;
+  }
+  .main .profile .profile-empty img {
+    margin-top: 24px;
   }
   .main .profile .form {
     padding: 0;
@@ -3953,6 +4271,9 @@ input, textarea, select, button {
   .main .categories .categories-box .category-item {
     width: 100%;
   }
+  .main .categories .categories-box .category-item .video {
+    height: 195px;
+  }
   .main .categories .categories-box .category-list .list-title span:last-child {
     padding-left: 28px;
   }
@@ -3970,7 +4291,8 @@ input, textarea, select, button {
   .main .categories .banner-box {
     min-height: 500px;
   }
-  .main .categories .card .category-photo {
+  .main .categories .card .category-photo,
+  .main .categories .card .category-video {
     height: 215px;
   }
   .main .categories .card .card-info .hidden-text {
@@ -4007,6 +4329,20 @@ input, textarea, select, button {
     left: 0;
     font-size: 14px;
     line-height: normal;
+  }
+  .video-algorithm {
+    margin-top: 0;
+  }
+  .video-algorithm .video {
+    height: 195px;
+  }
+  .video-algorithm .video-info {
+    padding: 24px 20px;
+  }
+  .video-algorithm .video-info .info-text {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 8px 0 12px;
   }
   .footer-top .top-text {
     font-size: 18px;

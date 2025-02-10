@@ -28,29 +28,57 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35786 11.6421 0 7.5 0C3.35786 0 0 3.35786 0 7.5C0 11.6421 3.35786 15 7.5 15ZM4 8.23922H6.67026V11H8.29957V8.23922H11V6.7306H8.29957V4H6.67026V6.7306H4V8.23922Z" fill="#E2020C"/>
                             </svg>
                         </li>
-                        <li><a href="./archive.html">Архив</a></li>
-                        <li><a href="./photos.html">Фотогалерея</a></li>
-                        <li><a href="./about.html">О компании</a></li>
-                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="./arxiv.html">Архив</a></li>
+                        <li><a href="./fotogaleriya.html">Фотогалерея</a></li>
+                        <li><a href="./o_companii.html">О компании</a></li>
+                        <li><a href="./kontakti.html">Контакты</a></li>
                     </ul>
-                    <a href="#" class="header-link d-none"><span>Новое:</span>  Шпаргалка профессионала</a>
+                    <a href="./shpargalka.html" class="header-link d-none"><span>Новое:</span>  Шпаргалка профессионала</a>
                     <div class="d-flex align-center">
-                        <a href="#" class="header-link btn-base">Шпаргалка профессионала</a>
-                        <div class="user-box d-flex align-center">
-                            <a href="./profile.html">
-                                <img src="assets/img/svg/login.svg" alt="" class="user-avatar">
-                            </a>
+                        <a href="./shpargalka.html" class="header-link btn-base">Шпаргалка профессионала</a>
+                        
+                        <!-- *** Авторизация *** -->
+                        <a href="./registrasiya.html" class="authorization">Авторизация</a>
+
+                        <!-- *** После Авторизация *** -->
+                        <!-- <div class="user-box d-flex align-center">
+                            <img src="assets/img/svg/login.svg" alt="" class="user-avatar profile_btn">
                             <div class="user-box-info">
-                               <a href="./profile.html" class="d-flex align-center">
+                               <div class="d-flex align-center profile_btn">
                                     <span class="user-name">Андрей Петров</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                                         <path d="M4.37105 6.92322C4.13144 6.71784 3.7707 6.74559 3.56531 6.9852C3.35993 7.22482 3.38768 7.58556 3.62729 7.79094L7.62729 11.2195C7.84129 11.4029 8.15706 11.4029 8.37105 11.2195L12.3711 7.79094C12.6107 7.58556 12.6384 7.22482 12.433 6.9852C12.2276 6.74559 11.8669 6.71784 11.6273 6.92322L7.99917 10.033L4.37105 6.92322Z" fill="#131313"/>
                                     </svg>
-                               </a>
+                               </div>
                                <div class="user-logout">Выйти</div>
                             </div>
-    
-                        </div>
+                            <ul class="profile-nav hidden">
+                                <li class="nav-item">
+                                    <a href="./profile.html">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.63366 1.07286C9.88336 1.03724 10.1211 1.03724 10.3708 1.07286C10.6174 1.10805 10.8232 1.16354 11.2968 1.32142L16.1683 2.94524C16.7516 3.13969 17.1451 3.68561 17.1451 4.30051V10.9285C17.1451 14.3531 15.0891 16.9766 11.1036 18.7445L10.8405 18.8587C10.3049 19.0864 9.69962 19.0864 9.16395 18.8587C5.00747 17.0919 2.85938 14.4303 2.85938 10.9285V4.30051C2.85938 3.68561 3.25285 3.13969 3.83619 2.94524L8.84203 1.27705C9.22286 1.15265 9.41171 1.10453 9.63366 1.07286ZM10.169 2.48711C10.0532 2.47058 9.95131 2.47058 9.83545 2.48711C9.69267 2.50748 9.55827 2.54373 9.15942 2.67668L4.28795 4.30051V10.9285C4.28795 13.7971 6.05299 15.984 9.72281 17.544C9.90136 17.6199 10.1031 17.6199 10.2766 17.5461L10.5294 17.4364C14.0314 15.883 15.7165 13.7327 15.7165 10.9285V4.30051L10.7331 2.63962C10.489 2.55953 10.3611 2.52286 10.2559 2.50189L10.169 2.48711ZM13.8645 7.49489C14.1219 7.75238 14.1417 8.15754 13.9239 8.43775L13.8645 8.50504L9.57874 12.7908C9.32125 13.0482 8.91608 13.068 8.63588 12.8502L8.56858 12.7908L6.24716 10.4693C5.96821 10.1904 5.96821 9.73812 6.24716 9.45917C6.50464 9.20168 6.90981 9.18188 7.19002 9.39975L7.25731 9.45917L9.07366 11.275L12.8543 7.49489C13.1332 7.21594 13.5855 7.21594 13.8645 7.49489Z" fill="#99A2AD"/>
+                                        </svg>
+                                        <span>Личные данные</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./profile.html">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.9281 1.73915C11.4513 1.86125 11.9118 2.12713 12.2791 2.51911C12.6514 2.91647 12.8681 3.33747 13.1012 4.16045L13.7046 6.4072C13.8067 6.78825 13.5806 7.17992 13.1995 7.28202C12.8185 7.38412 12.4268 7.15799 12.3247 6.77694L11.7716 4.71284L11.6912 4.42548C11.5376 3.90507 11.4222 3.69397 11.2366 3.49591C11.0624 3.30994 10.8516 3.18825 10.6034 3.13033C10.3391 3.06863 10.0986 3.07425 9.57114 3.20148L9.28205 3.27548L5.61957 4.25683C5.00958 4.42028 4.72404 4.5387 4.54185 4.6734L4.49832 4.70745L4.40265 4.79182C4.21668 4.96608 4.09499 5.17685 4.03706 5.42503C3.97023 5.71138 3.98239 5.96978 4.14259 6.59535L6.45767 15.2385C6.65516 15.9756 6.77614 16.2244 6.99266 16.4554C7.16691 16.6414 7.37769 16.7631 7.62586 16.821C7.86797 16.8775 8.07312 16.8772 8.48928 16.7877L8.63616 16.7545L8.95694 16.6734C9.33938 16.5766 9.72784 16.8082 9.82459 17.1906C9.91443 17.5458 9.72115 17.9061 9.38688 18.0332L9.3073 18.0583L8.97518 18.1422C8.24422 18.3145 7.80177 18.3291 7.30115 18.2122C6.77804 18.0901 6.31751 17.8242 5.95022 17.4322C5.57788 17.0349 5.36124 16.6139 5.12806 15.7909L2.80232 7.11616C2.54901 6.1708 2.51327 5.66849 2.64589 5.10032C2.75442 4.63533 2.97656 4.21979 3.31026 3.86577L3.44063 3.73592L3.56837 3.62325C3.92244 3.32922 4.33783 3.13442 5.06217 2.92867L5.24983 2.87694L8.91231 1.89558C9.85767 1.64227 10.36 1.60653 10.9281 1.73915ZM14.8884 8.57145C16.5287 8.57145 17.8584 9.90105 17.8584 11.5412C17.8584 13.1432 17.2215 13.9401 14.6817 15.9154L13.5057 16.83C13.1249 17.1261 12.5918 17.1261 12.211 16.83L11.035 15.9154C8.49521 13.9401 7.85835 13.1432 7.85835 11.5412C7.85835 9.90105 9.18804 8.57145 10.8283 8.57145C11.5329 8.57145 12.1816 8.77086 12.7604 9.1599L12.8584 9.22859L12.9563 9.1599C13.4825 8.80623 14.0664 8.60927 14.6976 8.57638L14.8884 8.57145ZM14.8884 10C14.3147 10 13.8182 10.2149 13.3633 10.6695L13.111 10.9217C12.9714 11.0609 12.7453 11.0609 12.6057 10.9217L12.3534 10.6695C11.8985 10.2149 11.402 10 10.8283 10C9.977 10 9.28692 10.6901 9.28692 11.5412C9.28692 12.5485 9.70411 13.0706 11.912 14.7877L12.8584 15.5236L14.176 14.4968C16.0013 13.054 16.4052 12.5226 16.4287 11.6289L16.4298 11.5412C16.4298 10.6901 15.7397 10 14.8884 10Z" fill="#99A2AD"/>
+                                        </svg>
+                                        <span>Подписки</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./profile.html">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.0011 1.42847C14.735 1.42847 18.5725 5.26603 18.5725 9.9999C18.5725 14.7338 14.735 18.5713 10.0011 18.5713C5.26725 18.5713 1.42969 14.7338 1.42969 9.9999C1.42969 5.26603 5.26725 1.42847 10.0011 1.42847ZM10.0011 14.6428C8.51116 14.6428 7.08686 15.0585 5.86055 15.8206C7.02838 16.6532 8.45757 17.1428 10.0011 17.1428C11.5443 17.1428 12.9733 16.6534 14.1411 15.8213C12.915 15.0583 11.4909 14.6428 10.0011 14.6428ZM10.0011 2.85704C6.05622 2.85704 2.85826 6.055 2.85826 9.9999C2.85826 11.8682 3.57558 13.569 4.74985 14.8419C6.27656 13.7915 8.09468 13.2142 10.0011 13.2142C11.9078 13.2142 13.7261 13.7916 15.253 14.8409C16.4269 13.5684 17.144 11.8679 17.144 9.9999C17.144 6.055 13.946 2.85704 10.0011 2.85704ZM10.0011 5.35704C11.8755 5.35704 13.394 6.87549 13.394 8.7499C13.394 10.6243 11.8755 12.1428 10.0011 12.1428C8.12672 12.1428 6.60826 10.6243 6.60826 8.7499C6.60826 6.87549 8.12672 5.35704 10.0011 5.35704ZM10.0011 6.78561C8.91569 6.78561 8.03683 7.66447 8.03683 8.7499C8.03683 9.83532 8.91569 10.7142 10.0011 10.7142C11.0865 10.7142 11.9654 9.83532 11.9654 8.7499C11.9654 7.66447 11.0865 6.78561 10.0011 6.78561Z" fill="#99A2AD"/>
+                                        </svg>                                            
+                                        <span>Безопасность</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -67,10 +95,10 @@
                      <ul class="menu-nav">
                         <li><a href="./index.html">Главная</a></li>
                         <li class="projects-show_btn">Проекты</li>
-                        <li><a href="./archive.html">Архив</a></li>
-                        <li><a href="./photos.html">Фотогалерея</a></li>
-                        <li><a href="./about.html">О компании</a></li>
-                        <li><a href="./contact.html">Контакты</a></li>
+                        <li><a href="./arxiv.html">Архив</a></li>
+                        <li><a href="./fotogaleriya.html">Фотогалерея</a></li>
+                        <li><a href="./o_companii.html">О компании</a></li>
+                        <li><a href="./kontakti.html">Контакты</a></li>
                      </ul>
                 </div>
                <div class="projects">
@@ -78,18 +106,18 @@
                         <span class="d-none"></span>
                     </p>
                     <ul class="menu-nav">
-                        <li><a href="#">Профессионалы ОТС</a></li>
-                        <li><a href="#">Профессионалы RX</a></li>
-                        <li><a href="#">Профессионалы на кухне</a></li>
-                        <li><a href="#">Мама-фармацевт</a></li>
-                        <li><a href="#">Битва сетей</a></li>
-                        <li><a href="#">Игра Профессионала</a></li>
-                        <li><a href="#">Алгоритмы</a></li>
-                        <li><a href="#">ФармТалант</a></li>
-                        <li><a href="#">ФармОлимпиада</a></li>
+                        <li><a href="./shpargalka.html">Профессионалы ОТС</a></li>
+                        <li><a href="./shpargalka.html">Профессионалы RX</a></li>
+                        <li><a href="./shpargalka.html">Профессионалы на кухне</a></li>
+                        <li><a href="./shpargalka.html">Мама-фармацевт</a></li>
+                        <li><a href="./shpargalka.html">Битва сетей</a></li>
+                        <li><a href="./shpargalka.html">Игра Профессионала</a></li>
+                        <li><a href="./shpargalka.html">Алгоритмы</a></li>
+                        <li><a href="./shpargalka.html">ФармТалант</a></li>
+                        <li><a href="./shpargalka.html">ФармОлимпиада</a></li>
                     </ul>
                </div>
-               <a href="#" class="header-link btn-base">Шпаргалка профессионала</a>
+               <a href="./shpargalka.html" class="header-link btn-base">Шпаргалка профессионала</a>
             </div>
         </div>
     </header>
@@ -144,6 +172,13 @@
 
         <div class="block1">
             <div class="container">
+                <div class="block1-box full_box">
+                    <picture class="block1-png"> 
+                        <source srcset="assets/img/webp/photo.webp" type="image/webp">  
+                        <source srcset="assets/img/png/photo.png" type="image/png"> 
+                        <img src="assets/img/png/photo.png" alt="">
+                    </picture>
+                </div>
                 <div class="block1-box">
                     <picture class="block1-png"> 
                         <source srcset="assets/img/webp/photo.webp" type="image/webp">  
@@ -168,16 +203,19 @@
                     </h2>
                     <div class="block2-box d-flex justify-between flex-wrap">
                         <div class="box-left">
-                            <picture class="left-img"> 
-                                <source srcset="assets/img/webp/p1.webp" type="image/webp">  
-                                <source srcset="assets/img/png/p1.png" type="image/png"> 
-                                <img src="assets/img/png/p1.png" alt="">
-                            </picture>
+                            <div class="video">
+                                <video src="assets/video/video.mp4" controls="controls"></video>
+                                <picture class="video-poster"> 
+                                    <source srcset="assets/img/webp/p1.webp" type="image/webp">  
+                                    <source srcset="assets/img/png/p1.png" type="image/png"> 
+                                    <img src="assets/img/png/p1.png" alt="">
+                                </picture>
+                            </div>
                             <div class="left-info">
-                                <div class="subtitle-text">
+                                <a href="./vipuska.html" class="subtitle-text">
                                     <span>Выпуск 184:</span>
                                     <span>Знания на кончиках пальцев</span>
-                                </div>
+                                </a>
                                 <p class="info-text">Описание статьи в 2-3 строки может больше, но лучше задать фиксированную величину символов 
                                     для предпросмотра</p>
                             </div>
@@ -197,7 +235,7 @@
                                     ожидайте приглашения на съемки.</p>
                                 <div class="box-right-btn">
                                     <a href="#" class="take-part btn-base d-flex align-center justify-center">Принять участие</a>
-                                    <a href="#" class="project-rules d-flex align-center justify-between">
+                                    <a href="./pravila_proekta.html" class="project-rules d-flex align-center justify-between">
                                         <span>Правила проекта</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
                                             <path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6L1 4.4ZM14.4243 5.42427C14.6586 5.18995 14.6586 4.81005 14.4243 4.57574L10.6059 0.75736C10.3716 0.523045 9.99167 0.523045 9.75736 0.75736C9.52304 0.991675 9.52304 1.37157 9.75736 1.60589L13.1515 5L9.75736 8.39411C9.52304 8.62843 9.52304 9.00833 9.75736 9.24264C9.99167 9.47696 10.3716 9.47696 10.6059 9.24264L14.4243 5.42427ZM1 5.6L14 5.6L14 4.4L1 4.4L1 5.6Z" fill="#131313"/>
@@ -218,23 +256,26 @@
                     <p class="info-text">Профессионалы RX - проект в котором принимают участие.... темы выпусков являются препараты которые...  Профессионалы RX - проект в котором принимают участие....
                         темы выпусков являются препараты которые...</p>
                     <div class="block3-box d-flex justify-between flex-wrap">
-                        <picture class="box-img"> 
-                            <source srcset="assets/img/webp/p2.webp" type="image/webp">  
-                            <source srcset="assets/img/png/p2.png" type="image/png"> 
-                            <img src="assets/img/png/p2.png" alt="">
-                        </picture>
+                        <div class="video">
+                            <video src="assets/video/video.mp4" controls="controls"></video>
+                            <picture class="video-poster"> 
+                                <source srcset="assets/img/webp/p2.webp" type="image/webp">  
+                                <source srcset="assets/img/png/p2.png" type="image/png"> 
+                                <img src="assets/img/png/p2.png" alt="">
+                            </picture>
+                        </div>
                         <div class="box-right d-flex flex-column justify-between">
                             <div class="">
-                                <div class="subtitle-text">
+                                <a href="./vipuska.html" class="subtitle-text">
                                     <span>Выпуск 183:</span>
                                     <span>Куда привела мужская интуиция?</span>
-                                </div>
+                                </a>
                                 <p class="info-text">Второй год подряд мы широко празднуем День фармацевта. 200 провизоров 
                                     и фармацевтов из разных аптечных сетей мы собираем на одной площадке, чтобы подарить им праздник.</p>
                             </div>
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="take-part btn-base d-flex align-center justify-center">Принять участие</a>
-                                <a href="#" class="project-rules d-flex align-center justify-between">
+                                <a href="./pravila_proekta.html" class="project-rules d-flex align-center justify-between">
                                     <span>Правила проекта</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
                                         <path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6L1 4.4ZM14.4243 5.42427C14.6586 5.18995 14.6586 4.81005 14.4243 4.57574L10.6059 0.75736C10.3716 0.523045 9.99167 0.523045 9.75736 0.75736C9.52304 0.991675 9.52304 1.37157 9.75736 1.60589L13.1515 5L9.75736 8.39411C9.52304 8.62843 9.52304 9.00833 9.75736 9.24264C9.99167 9.47696 10.3716 9.47696 10.6059 9.24264L14.4243 5.42427ZM1 5.6L14 5.6L14 4.4L1 4.4L1 5.6Z" fill="#131313"/>
@@ -249,14 +290,17 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="archive-item">
-                                    <picture class="item-img"> 
-                                        <source srcset="assets/img/webp/a1.webp" type="image/webp">  
-                                        <source srcset="assets/img/png/a1.png" type="image/png"> 
-                                        <img src="assets/img/png/a1.png" alt="">
-                                    </picture>
+                                        <div class="video">
+                                            <video src="assets/video/video.mp4" controls="controls"></video>
+                                            <picture class="video-poster"> 
+                                                <source srcset="assets/img/webp/a1.webp" type="image/webp">  
+                                                <source srcset="assets/img/png/a1.png" type="image/png"> 
+                                                <img src="assets/img/png/a1.png" alt="">
+                                            </picture>
+                                        </div>
                                     <div class="item-info">
-                                        <h3 class="info-title">Выпуск 185. Модель которая
-                                            работает в аптеке</h3>
+                                        <a href="./vipuska.html" class="info-title">Выпуск 185. Модель которая
+                                            работает в аптеке</a>
                                         <p class="info-text">Описание статьи в 2-3 строки может больше, 
                                             но лучше задать фиксированную величину 
                                             символов для предпросмотра</p>
@@ -269,14 +313,17 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="archive-item">
-                                    <picture class="item-img"> 
-                                        <source srcset="assets/img/webp/a2.webp" type="image/webp">  
-                                        <source srcset="assets/img/png/a2.png" type="image/png"> 
-                                        <img src="assets/img/png/a2.png" alt="">
-                                    </picture>
+                                        <div class="video">
+                                            <video src="assets/video/video.mp4" controls="controls"></video>
+                                            <picture class="video-poster"> 
+                                                <source srcset="assets/img/webp/a2.webp" type="image/webp">  
+                                                <source srcset="assets/img/png/a2.png" type="image/png"> 
+                                                <img src="assets/img/png/a2.png" alt="">
+                                            </picture>
+                                        </div>
                                     <div class="item-info">
-                                        <h3 class="info-title">Выпуск 187. Выигранные деньги отправит
-                                            мужу на СВО</h3>
+                                        <a href="./vipuska.html" class="info-title">Выпуск 187. Выигранные деньги отправит
+                                            мужу на СВО</a>
                                         <p class="info-text">Описание статьи в 2-3 строки может больше, 
                                             но лучше задать фиксированную величину 
                                             символов для предпросмотра</p>
@@ -289,14 +336,17 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="archive-item">
-                                    <picture class="item-img"> 
-                                        <source srcset="assets/img/webp/a3.webp" type="image/webp">  
-                                        <source srcset="assets/img/png/a3.png" type="image/png"> 
-                                        <img src="assets/img/png/a3.png" alt="">
-                                    </picture>
+                                        <div class="video">
+                                            <video src="assets/video/video.mp4" controls="controls"></video>
+                                            <picture class="video-poster"> 
+                                                <source srcset="assets/img/webp/a3.webp" type="image/webp">  
+                                                <source srcset="assets/img/png/a3.png" type="image/png"> 
+                                                <img src="assets/img/png/a3.png" alt="">
+                                            </picture>
+                                        </div>
                                     <div class="item-info">
-                                        <h3 class="info-title">Выпуск 180. Коллеги превратились
-                                            в соперниц</h3>
+                                        <a href="./vipuska.html" class="info-title">Выпуск 180. Коллеги превратились
+                                            в соперниц</a>
                                         <p class="info-text">Описание статьи в 2-3 строки может больше, 
                                             но лучше задать фиксированную величину 
                                             символов для предпросмотра</p>
@@ -310,7 +360,7 @@
                             </div>
                             <div class="archive-pagination pagination"></div>
                         </div>
-                        <a href="./archive.html" class="archive-all btn-base">Весь архив</a>
+                        <a href="./arxiv.html" class="archive-all btn-base">Весь архив</a>
                     </div>
                 </div>
             </div>
@@ -323,23 +373,26 @@
                     <p class="info-text">Профессионалы RX - проект в котором принимают участие.... темы выпусков являются препараты которые...  Профессионалы RX - проект в котором принимают участие....
                         темы выпусков являются препараты которые...</p>
                     <div class="block3-box d-flex justify-between flex-wrap">
-                        <picture class="box-img"> 
-                            <source srcset="assets/img/webp/p2.webp" type="image/webp">  
-                            <source srcset="assets/img/png/p2.png" type="image/png"> 
-                            <img src="assets/img/png/p2.png" alt="">
-                        </picture>
+                        <div class="video">
+                            <video src="assets/video/video.mp4" controls="controls"></video>
+                            <picture class="video-poster"> 
+                                <source srcset="assets/img/webp/p2.webp" type="image/webp">  
+                                <source srcset="assets/img/png/p2.png" type="image/png"> 
+                                <img src="assets/img/png/p2.png" alt="">
+                            </picture>
+                        </div>
                         <div class="box-right d-flex flex-column justify-between">
                             <div class="">
-                                <div class="subtitle-text">
+                                <a href="./vipuska.html" class="subtitle-text">
                                     <span>Выпуск 183:</span>
                                     <span>Куда привела мужская интуиция?</span>
-                                </div>
+                                </a>
                                 <p class="info-text">Второй год подряд мы широко празднуем День фармацевта. 200 провизоров 
                                     и фармацевтов из разных аптечных сетей мы собираем на одной площадке, чтобы подарить им праздник.</p>
                             </div>
                             <div class="d-flex flex-wrap">
                                 <a href="#" class="take-part btn-base d-flex align-center justify-center">Принять участие</a>
-                                <a href="#" class="project-rules d-flex align-center justify-between">
+                                <a href="./pravila_proekta.html" class="project-rules d-flex align-center justify-between">
                                     <span>Правила проекта</span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
                                         <path d="M1 4.4C0.668629 4.4 0.4 4.66863 0.4 5C0.4 5.33137 0.668629 5.6 1 5.6L1 4.4ZM14.4243 5.42427C14.6586 5.18995 14.6586 4.81005 14.4243 4.57574L10.6059 0.75736C10.3716 0.523045 9.99167 0.523045 9.75736 0.75736C9.52304 0.991675 9.52304 1.37157 9.75736 1.60589L13.1515 5L9.75736 8.39411C9.52304 8.62843 9.52304 9.00833 9.75736 9.24264C9.99167 9.47696 10.3716 9.47696 10.6059 9.24264L14.4243 5.42427ZM1 5.6L14 5.6L14 4.4L1 4.4L1 5.6Z" fill="#131313"/>
@@ -354,14 +407,17 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="archive-item">
-                                    <picture class="item-img"> 
-                                        <source srcset="assets/img/webp/a1.webp" type="image/webp">  
-                                        <source srcset="assets/img/png/a1.png" type="image/png"> 
-                                        <img src="assets/img/png/a1.png" alt="">
-                                    </picture>
+                                        <div class="video">
+                                            <video src="assets/video/video.mp4" controls="controls"></video>
+                                            <picture class="video-poster"> 
+                                                <source srcset="assets/img/webp/a1.webp" type="image/webp">  
+                                                <source srcset="assets/img/png/a1.png" type="image/png"> 
+                                                <img src="assets/img/png/a1.png" alt="">
+                                            </picture>
+                                        </div>
                                     <div class="item-info">
-                                        <h3 class="info-title">Выпуск 185. Модель которая
-                                            работает в аптеке</h3>
+                                        <a href="./vipuska.html" class="info-title">Выпуск 185. Модель которая
+                                            работает в аптеке</a>
                                         <p class="info-text">Описание статьи в 2-3 строки может больше, 
                                             но лучше задать фиксированную величину 
                                             символов для предпросмотра</p>
@@ -374,14 +430,17 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="archive-item">
-                                    <picture class="item-img"> 
-                                        <source srcset="assets/img/webp/a2.webp" type="image/webp">  
-                                        <source srcset="assets/img/png/a2.png" type="image/png"> 
-                                        <img src="assets/img/png/a2.png" alt="">
-                                    </picture>
+                                        <div class="video">
+                                            <video src="assets/video/video.mp4" controls="controls"></video>
+                                            <picture class="video-poster"> 
+                                                <source srcset="assets/img/webp/a2.webp" type="image/webp">  
+                                                <source srcset="assets/img/png/a2.png" type="image/png"> 
+                                                <img src="assets/img/png/a2.png" alt="">
+                                            </picture>
+                                        </div>
                                     <div class="item-info">
-                                        <h3 class="info-title">Выпуск 187. Выигранные деньги отправит
-                                            мужу на СВО</h3>
+                                        <a href="./vipuska.html" class="info-title">Выпуск 187. Выигранные деньги отправит
+                                            мужу на СВО</a>
                                         <p class="info-text">Описание статьи в 2-3 строки может больше, 
                                             но лучше задать фиксированную величину 
                                             символов для предпросмотра</p>
@@ -393,15 +452,18 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                <div class="archive-item">
-                                    <picture class="item-img"> 
-                                        <source srcset="assets/img/webp/a3.webp" type="image/webp">  
-                                        <source srcset="assets/img/png/a3.png" type="image/png"> 
-                                        <img src="assets/img/png/a3.png" alt="">
-                                    </picture>
+                                    <div class="archive-item">
+                                        <div class="video">
+                                            <video src="assets/video/video.mp4" controls="controls"></video>
+                                            <picture class="video-poster"> 
+                                                <source srcset="assets/img/webp/a3.webp" type="image/webp">  
+                                                <source srcset="assets/img/png/a3.png" type="image/png"> 
+                                                <img src="assets/img/png/a3.png" alt="">
+                                            </picture>
+                                        </div>
                                     <div class="item-info">
-                                        <h3 class="info-title">Выпуск 180. Коллеги превратились
-                                            в соперниц</h3>
+                                        <a href="./vipuska.html" class="info-title">Выпуск 180. Коллеги превратились
+                                            в соперниц</a>
                                         <p class="info-text">Описание статьи в 2-3 строки может больше, 
                                             но лучше задать фиксированную величину 
                                             символов для предпросмотра</p>
@@ -415,7 +477,7 @@
                             </div>
                             <div class="archive-pagination pagination"></div>
                         </div>
-                        <a href="./archive.html" class="archive-all btn-base">Весь архив</a>
+                        <a href="./arxiv.html" class="archive-all btn-base">Весь архив</a>
                     </div>
                 </div>
             </div>
@@ -529,7 +591,7 @@
                         </div>
                         <div class="block4-pagination pagination"></div>
                     </div>
-                    <a href="./photos.html" class="view-all btn-base">Смотреть все фото</a>
+                    <a href="./fotogaleriya.html" class="view-all btn-base">Смотреть все фото</a>
                 </div>
             </div>
         </div>
@@ -540,10 +602,11 @@
             <div class="footer-top d-flex  justify-between align-center">
                 <p class="top-text">Подпишитесь на нашу рассылку
                     <span>чтоб быть в курсе новостей и обновлений</span></p>
-                <form class="top-form d-flex">
+                <form class="top-form success d-flex">
                     <div class="input-box">
-                        <input type="email" id="email" class="form__inp" placeholder="yourmail@gmail.com" required>
+                        <input type="email" id="email" class="form__inp" placeholder="" value="Вы подписались на уведомления" required>
                         <label for="email">E-mail:</label>
+                        <img src="assets/img/svg/circle-check.svg" alt="" class="check">
                     </div>
                     <button class="form-btn btn-base">
                         <span>Подписаться</span>
@@ -568,9 +631,9 @@
                         <p class="item-title">Меню:</p>
                         <ul class="item-nav">
                             <li><a href="#">Проекты</a></li>
-                            <li><a href="./archive.html">Архив</a></li>
-                            <li><a href="./photos.html">Фотогалерея</a></li>
-                            <li><a href="./about.html">О компании</a></li>
+                            <li><a href="./arxiv.html">Архив</a></li>
+                            <li><a href="./fotogaleriya.html">Фотогалерея</a></li>
+                            <li><a href="./o_companii.html">О компании</a></li>
                         </ul>
                     </div>
                     <div class="item">
@@ -583,14 +646,14 @@
                     <div class="item">
                         <p class="item-title">Социальные сети:</p>
                         <ul class="item-nav">
-                            <li><a href="#" class="d-flex align-center">
+                            <li><a href="https://www.youtube.com/@professionalypharm" class="d-flex align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589Z" fill="#FE1E25"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2111 10.8944C13.9482 10.5259 13.9482 9.47409 13.2111 9.10557L8.44721 6.72361C7.78231 6.39116 7 6.87465 7 7.61803V12.382C7 13.1253 7.78231 13.6088 8.44721 13.2764L13.2111 10.8944Z" fill="white"/>
                                   </svg>
                                 YouTube
                             </a></li>
-                            <li><a href="#" class="d-flex align-center">
+                            <li><a href="https://vk.com/" class="d-flex align-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589Z" fill="#0077FF"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.375 6.0835C3.48333 11.2835 6.08329 14.4085 10.6416 14.4085H10.9V11.4335C12.575 11.6001 13.8416 12.8251 14.3499 14.4085H16.7167C16.0667 12.0418 14.3583 10.7335 13.2916 10.2335C14.3583 9.61684 15.8582 8.11684 16.2166 6.0835H14.0665C13.5999 7.7335 12.2167 9.2335 10.9 9.37517V6.0835H8.74996V11.8501C7.41663 11.5168 5.73333 9.90017 5.65833 6.0835H3.375Z" fill="white"/>
@@ -604,8 +667,8 @@
 
             <div class="footer-bottom d-flex justify-between align-center">
                 <ul class="left d-flex justify-between">
-                    <li><a href="./privacy-policy.html">Политика конфиденциальности</a></li>
-                    <li><a href="./processing-policy.html">Политика обработки персональных данных</a></li>
+                    <li><a href="./politika.html">Политика конфиденциальности</a></li>
+                    <li><a href="./politika_konfidensialnosti.html">Политика обработки персональных данных</a></li>
                 </ul>
                 <a href="#header" class="up-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54" fill="none">
@@ -626,5 +689,6 @@
     <script src="assets/js/archive.js"></script>
     <script src="assets/js/photos.js"></script>
     <script src="assets/js/select.js"></script>
+    <script src="assets/js/video.js"></script>
 </body>
 </html>

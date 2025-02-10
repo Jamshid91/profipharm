@@ -53,3 +53,19 @@ document.addEventListener('click', (e) => {
         body.classList.remove('bodyStopScroll');
     }
 });
+
+const profile_btn = document.querySelectorAll('.profile_btn');
+
+profile_btn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.parentElement.classList.toggle('showProfile');
+        btn.parentElement.parentElement.classList.toggle('showProfile');
+    })
+});
+
+document.addEventListener('click', (e) => {
+    profile_btn.forEach(btn => {
+        btn.parentElement.contains(e.target) || btn.parentElement.classList.remove('showProfile');
+        btn.parentElement.parentElement.contains(e.target) || btn.parentElement.parentElement.classList.remove('showProfile');
+    });
+})
